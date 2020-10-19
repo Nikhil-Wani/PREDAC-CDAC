@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+int upcas(int );
+
+void main()
+{
+	char a;
+	printf("ENter  a character:");
+	scanf("%c",&a);
+	printf("%c",upcas(a));
+getch();
+}
+int upcas(int a)
+{
+	if(a>=65 && a<=90)
+		{
+			a=a+32;
+			return a;
+		}
+	else if(a>=97 && a<=122)
+		{
+			a=a-32;
+			return a;
+		}
+	else
+		printf("enter valid character");
+	return 0;
+}

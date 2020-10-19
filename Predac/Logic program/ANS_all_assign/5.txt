@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void vowel(char);
+void main()
+{       clrscr();
+	char a;
+	printf("enter a character");
+	scanf("%c",&a);
+	vowel(a);
+	getch();
+}
+void vowel(char x)
+{       if((x==a)||(x==A)||(x==e)||(x==E)||(x==i)||(x==I)||(x==o)||(x==O)||(x==u)||(x==U)
+	printf("it is vowel");
+	else
+	printf("it is not vowel");
+}
+
+

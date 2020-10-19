@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<conio.h>
+int poly(int ,int,int,int);
+int sq(int,int,int,int);
+void main()
+{
+	int a,b,c,d;
+	printf("ENter  a sides");
+	scanf("%d%d%d%d",&a,&b,&c,&d);
+	
+	if(poly(a,b,c,d))
+	printf("\n polygon status : 1");
+	else
+		printf("\n polygon status : 0");
+		if(sq(a,b,c,d))
+			printf("\n square status : 1");
+	else
+		printf("\n square status : 0");
+	getch();
+}
+int poly(int a,int b,int c,int d)
+{
+	int max,sum;
+	if(a>b && a>c && a>d)
+		max=a;
+	else if(b>c && b>d)
+		max=b;
+	else if(c>d)
+		max=c;
+	else
+		max=d;
+	sum=a+b+c+d;
+	sum=sum-max;
+	if(max<=sum)
+		return 1;
+	else
+		return 0;
+}
+int sq(int a,int b,int c,int d)
+{
+	if(a==b &&a==c && a==d)
+		return 1;
+	else
+		return 0;
+}
