@@ -1,0 +1,57 @@
+#include<stdio.h>
+void Sqr(int x)
+{
+	printf("%d",X*X);
+}
+void cube(int x)
+{	printf("\n%d",X*X);
+}
+void increase(int x)
+{
+		printf("\n%d",++x);
+}
+int main()
+{
+	void (*ptr[3])(); // ptr is an array of pointer to a function accepts integer and returns anything
+	ptr[0]=Sqr;
+	ptr[1]=cube;
+	ptr[2]=increase;
+
+	for(int i=0;i<3;i++)
+	{
+		ptr[i]();
+	}
+	return 0;
+}
+
+
+
+
+void main( ) 
+      { int i;
+    void fun1( ), fun2( ), fun3( );
+         int (*f[3])( );
+         f[0]=fun1;   f[1]=fun2;	  f[2]=fun3;
+         
+        for(i=0;i<3;i++)	
+    
+           (*f[i]) ( ); //f[i] ()
+      }
+
+
+      fun1( )   { printf(“USM”);	 }
+      fun2( )   { printf(“COMPUTER”);	 }
+      fun3( )   { printf(“EDUCATION”);	 }          
+  
+1)	USM COMPUTER EDUCATION
+2)	USM COMPUTER
+3)	USM COMPUTERCOMPUTEREDUCATION
+4)	Error
+
+
+
+
+
+
+
+

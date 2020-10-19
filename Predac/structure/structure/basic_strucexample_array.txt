@@ -1,0 +1,39 @@
+#include<stdio.h.
+int main()
+{
+struct student
+{
+int rollno;
+int mks;
+char name[20];
+};
+struct student r[5],t;
+int i;
+
+for(i=0;i<5;i++)
+{ printf("enter roll no name and marks");
+ scanf("%d %s %d",&r[i].rollno,r[i].name,&r[i].mks);
+}
+for(i=0;i<5;i++)
+{ prinf("%d %s %d",r[i].rollno,r[i].name,r[i].mks);
+}
+
+for(i=0;i<5-1;i++)
+{
+ for(j=0;j<5-1-i;j++)
+  { 
+	if(strcmpi(r[j].name,r[j+1].name)>0)
+         {
+           t=r[j]
+          r[j]=r[j+1];
+	   r[j+1]=t;
+
+         }
+
+  }
+
+}
+
+getche();
+return 0;
+}

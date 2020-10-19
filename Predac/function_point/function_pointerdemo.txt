@@ -1,0 +1,61 @@
+#include<stdio.h>
+
+// Note our user-defined comparison is the third parameter
+void SelectionSort(int *arr, int nSize, int (*pComparison)(int,int))
+{
+int t;
+for (int i= 0; i <nSize-1; i++)
+    {
+	   // Search through every element starting at nStartIndex+1
+for (int j = i+ 1; j <nSize; j++)
+	   {
+		  // Note that we are using the user-defined comparison here
+	if (pComparison(arr[i], arr[j])) // COMPARISON DONE HERE
+		{
+			t=arr[i];
+			arr[i]=arr[j];
+			arr[j]=t;
+
+		}
+
+	   }
+
+
+    }
+}
+
+// Here is a comparison function that sorts in ascending order
+// (Note: it's exactly the same as the previous Ascending() function)
+int Ascending(int nX, int nY)
+{
+return nX>nY;
+}
+
+// Here is a comparison function that sorts in descending order
+int Descending(int nX, int nY)
+{
+return nX<nY;
+}
+
+// This function prints out the values in the array
+void PrintArray(int *pArray, int nSize)
+{
+for (int iii=0; iii <nSize; iii++)
+	printf("\n%d", pArray[iii] );
+
+}
+
+int main()
+{
+	int arr[9] = { 3, 7, 9, 5, 6, 1, 8, 2, 4 };
+
+    // Sort the array in descending order using the Descending() function
+    //SelectionSort(arr, 9, Descending);
+    //PrintArray(arr, 9);
+
+    // Sort the array in ascending order using the Ascending() function
+SelectionSort(arr, 9, Ascending);
+PrintArray(arr, 9);
+
+return 0;
+}
