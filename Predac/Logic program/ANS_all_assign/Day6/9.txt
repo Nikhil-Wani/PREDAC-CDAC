@@ -1,0 +1,47 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void occur(char [],char,int *);
+void main()
+{
+    char str[20];
+	int c=0;
+     char t;
+	printf("enter the string ");
+	scanf("%s",str);
+	
+	printf("enter the character ");
+	t=getche();
+	occur(str,t,&c);
+
+	printf("character occur %d times \n",c);
+	puts(str);
+	getch();
+
+}
+void occur(char str[],char t,int *c)
+{
+	int i,j;
+	
+	for(i=0;str[i]!='\0';i++)
+	{
+		
+		if(t==str[i])
+			{
+				(*c)++;
+				for(j=i;str[j]!='\0';j++)
+				str[j]=str[j+1];
+				i--;
+		}
+
+		
+	}
+	str[i]='\0';
+
+
+}
+
+
+	
+
+

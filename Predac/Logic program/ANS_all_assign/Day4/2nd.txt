@@ -1,0 +1,58 @@
+/*Q1.	Give choice to user
+a.	square
+b.	Cube
+c.	 exit
+as per user choice display result if user enter invalid choice give appropriate message.
+*/
+
+
+#include<stdio.h>
+void main()
+{
+	int sqr,cbe,n;
+	
+
+	char ch;
+	
+	do
+	{
+
+	printf("\n\nt Enter ");
+	scanf("%d",&n);
+
+
+	printf("\n\t s.	square.\n\t c	Cube.	 \n\t  E     exit\n\t" );
+	scanf("\n %c",&ch);
+
+	
+
+
+switch(ch)
+{
+case 's' :
+	sqr=n*n;
+	printf("\n\t %d",sqr);
+	break;
+
+case 'c':
+	cbe=n*n*n;
+	printf("\n\t %d",cbe);
+	break;
+	
+
+case 'E':
+	exit(0);
+	break;
+
+default:
+	printf("\n\t Enter valid input");
+	
+
+}
+
+
+}while(ch!='e');
+
+	getche();
+
+}

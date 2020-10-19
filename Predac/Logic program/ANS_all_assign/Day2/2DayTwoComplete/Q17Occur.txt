@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	long int num, d, r=0, c=0;
+	printf("Enter a number: ");
+	scanf("%ld",&num);
+	printf("Enter a digit: ");
+	scanf("%ld",&d);
+	while(num!=0)
+	{
+		r=num%10;
+		if(r==d)
+		{
+			c++;
+		}
+		num=num/10;
+	}
+	printf("Occurrence of %d is %d", d, c);
+	getch();
+}

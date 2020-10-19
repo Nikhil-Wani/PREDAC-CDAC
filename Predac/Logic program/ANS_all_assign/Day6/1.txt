@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+void occ(char [],char,int *);
+void main()
+{
+	int count=0;
+	char c;
+	char a[]="malayalam";
+	printf("enter the character");
+	c=getchar();
+	occ(a,c,&count);
+      printf("occurence = %d",count);
+       getche();
+}
+
+
+
+ void occ(char a[],char c,int *count)
+ {
+	 int i;
+	 char k;
+	for(i=0;a[i]!='\0';i++)
+	{
+	k=a[i];
+	if(k==c)
+	(*count)++;
+
+}
+}

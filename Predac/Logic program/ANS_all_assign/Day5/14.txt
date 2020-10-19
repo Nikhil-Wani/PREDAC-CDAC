@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<conio.h>
+void addRC(int [][4],int);
+void main()
+{
+	int i,j,a[4][4]={1,2,3,4,5,6,7,8,9};
+	int n=4;
+	addRC(a,n);
+
+		for(i=0;i<4;i++)
+	{
+		for(j=0;j<4;j++)
+			printf("%d\t",a[i][j]);
+		printf("\n");
+	}
+	getch();
+}
+
+
+
+    void addRC(int a[][4],int n)
+	{
+		int i,j,sum1,sum2;
+		for(i=0;i<3;i++)
+	{
+		sum1=0,sum2=0;
+		for(j=0;j<3;j++)
+			{
+				sum1=sum1+a[i][j];
+				sum2=sum2+a[j][i];
+		    }
+     		a[i][j]=sum1;
+	        a[j][i]=sum2;
+	}
+	}
+
+	
+	
+	
+

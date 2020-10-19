@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+void fib(int);
+void main()
+{
+	int n,i,c,a=0,b=1;
+	printf("Enter Number for Fibonnacci Series  :");
+	scanf("%d",&n);
+	printf("%d %d ",a,b);
+	fib(n);
+}
+
+void fib(int n)
+{
+	int i,c,a=0,b=1;
+	for(i=1;i<=n;i++)
+	{
+		c=a+b;
+		printf("%d ",c);
+		a=b;
+		b=c;
+
+	}
+	getch();
+
+}

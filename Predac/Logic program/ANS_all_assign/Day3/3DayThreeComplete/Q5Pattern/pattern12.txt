@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	int r,s,i,j,k=122;
+ for(i=120;i<=122;i++)
+ {
+	 for(s=120;s<i;s++)
+	 {	 
+		printf(" ");
+	 }
+	for(j=122;j>=i;j--)
+	{
+
+		printf("%c",j);
+
+	}
+	
+	for(r=j+2;r<=122;r++)
+	{
+		printf("%c",r);
+			
+	}
+printf("\n");
+
+}
+
+
+getch();
+	
+
+}
+
+
+

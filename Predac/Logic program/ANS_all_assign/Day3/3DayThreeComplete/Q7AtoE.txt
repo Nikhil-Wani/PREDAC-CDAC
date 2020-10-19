@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i, k, j,t,m=5;
+		char b='E', c='A';
+	for(j=1;j<=5;j++)
+	{
+		c='A';
+		t=0;
+	for(i=1;i<=m;i++)
+		{
+		for(k=c+t;k<=b;k++)
+		printf("%c", k);
+		t++;
+		}	
+	m--;
+	
+		printf("\n");
+	}
+		getch();
+}

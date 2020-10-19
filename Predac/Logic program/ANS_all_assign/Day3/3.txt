@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+int table(int ,int);
+
+void main()
+{
+	int a,i,j,cal;
+	printf("Enter  a no:");
+	scanf("%d",&a);
+                  for(j=1;j<=a;j++)
+                 {
+                  for(i=1;i<=10;i++)
+                  {
+	cal=table(j,i);
+	printf("\n %d*%d=%d",j,i,cal);
+	}
+}
+	getch();
+}
+int table(int a,int i)
+{
+	int c;
+		c=a*i;
+		
+		return c;
+}

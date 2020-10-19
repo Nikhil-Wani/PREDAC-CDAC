@@ -1,0 +1,23 @@
+.
+//Q8.	Accept 10 number in an array accept a index and a new number and add that number at that index
+
+#include<stdio.h>
+#include<conio.h>
+void replace(int[],int,int);
+void main()
+{
+		int i,ind,add,a[10];
+		printf("Enter the value 10 values\n");
+		for(i=0;i<10;i++)
+		scanf("%d",&a[i]);
+		printf("Enter the index and the value to add to that index");
+		scanf("%d%d",&ind,&add);
+		replace(a,ind,add);
+		printf("Value at a[%d]=%d",ind,a[ind]);
+		getche();
+}
+
+void replace(int a[],int ind,int add)
+{
+	a[ind]=a[ind]+add;
+}

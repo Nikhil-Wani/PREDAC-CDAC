@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	int s,i,j,c=1;
+ for(i=1;i<=3;i++)
+ {
+	 for(s=2;s>=i;s--)
+	{
+		printf(" ");
+	}
+	for(j=1;j<=c;j++)
+	{
+		printf("%d",i);
+		
+
+	}
+	c=c+2;
+	
+printf("\n");
+
+}
+
+
+getch();
+	
+
+}
+
+
+

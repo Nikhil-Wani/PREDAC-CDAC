@@ -1,0 +1,30 @@
+//Q8.	Print 10 line in a file then ask user which line it wants to read accordingly display that line
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{
+	FILE *fp;
+	char ch;
+	int count=1,num;
+
+		
+	/*Open a file*/
+	fp = fopen("d:\\ashu\\abcd.txt", "r");
+
+	/*fgetc fn read a char from file*/
+	printf("Enter line number to be read");
+	scanf("%d",&num);
+	while( (ch=fgetc(fp)) != EOF && count<=10)
+	{
+		if(count==num)
+		putchar(ch);
+		if(ch=='\n')
+			count++;
+	}
+
+	/*Close the file*/
+	fclose(fp);
+
+	getch();
+}

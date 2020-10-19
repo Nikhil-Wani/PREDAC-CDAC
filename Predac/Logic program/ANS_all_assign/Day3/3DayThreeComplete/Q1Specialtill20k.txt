@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+
+	int sum;
+	int i,j,r,temp,fact;
+
+	for(i=1;i<=20000;i++)
+	{	
+	sum=0;
+	temp=i;
+	
+	while(temp!=0)
+	{
+	r=temp%10;
+	
+	 for(fact=1,j=1;j<=r;j++)
+		fact=fact*j;
+	 sum=sum+fact;
+
+	temp=temp/10;
+	
+	}
+	
+	if(i==sum)
+	printf("%d\t",i);
+	}
+	
+getche();
+	
+
+
+
+}
+
+
+

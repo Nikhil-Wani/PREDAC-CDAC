@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+ int hcf(int, int);
+
+ void main()
+ {
+	 int a, b, op;
+	 printf("enter two values");
+	 scanf("%d %d",&a,&b);
+	 if(a>b)
+{
+ a= a+b;
+ b=a-b;
+ a= a-b;
+}
+
+	 printf("the hcf is %d", hcf(a, b));
+
+	 getche();
+ }
+
+ int hcf(int m, int n)
+ {
+	 int r;
+	 r= m%n;
+	 if(r!= 0)
+	 {
+		 hcf(n,r);
+	 }
+	 else
+	 return n;
+ }

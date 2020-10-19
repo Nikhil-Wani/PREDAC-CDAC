@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+struct student
+{
+	char name[10], div;
+	float percent;
+}mks[3];
+void sort();
+void main()
+{
+	int i,n=3;
+	for(i=0; i<n; i++)
+	{
+		printf("Enter Name, Division and Percentage obtained\n");
+		scanf("%s %c %f", mks[i].name, &mks[i].div, &mks[i].percent);
+	}
+	sort();
+	//Display
+	for(i=0; i<n; i++)
+	{
+		printf("%s\t%c\t%f\n", mks[i].name, mks[i].div, mks[i].percent);
+	}
+	getch();
+}
+
+void sort()
+{
+	int i,j,n=3;
+	struct student t;
+	for(i=0; i<n-1; i++)
+	{
+		for(j=0; j<n-i-1; j++)
+		{
+			if(strcmp(mks[j].div, mks[j+1].div)>0)
+			{
+				t=mks[j];
+				mks[j]=mks[j+1];
+				mks[j+1]=t;
+			}
+		}
+	}
+
+}

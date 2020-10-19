@@ -1,0 +1,52 @@
+
+	
+ #include<stdio.h>
+ #include<conio.h>
+ void main()
+ {
+                char ch;
+                int a,b,ans;
+                printf(" plz enter  two numbers of your choice: ");
+                scanf("%d%d",a,b);   
+                printf(" plz enter your choice: ");
+                 scanf("%c",ch);   
+                 
+            switch(ch)
+          {
+             case '1' :      {
+                                  printf(" \n 1.   ADDITION  ");
+                                  ans = a+b;
+                                  printf(" \n  %d  + %d = %d",a,b,ans);
+                                  break;
+                                  }
+
+            case '2' :      {
+                                  printf(" \n 2.  SUBTRACTION ");
+                                  ans = a-b;
+                                  printf(" \n  %d  - %d = %d",a,b,ans);
+                                  break;
+                                  }
+                                
+            case '3' :      {
+                                  printf(" \n 3.   MULTIPLICATION  ");
+                                  ans = a*b;
+                                  printf(" \n  %d  * %d = %d",a,b,ans);
+                                  break;
+                                  }
+
+            case '4' :      {
+                                  printf(" \n 4.  DIVISION  ");
+                                  ans = a+b;
+                                  printf(" \n  %d  / %d = %d",a,b,ans);
+                                  break;
+                                  }
+
+              default :      {
+                                    printf(" \n invalid choice ");
+           		break;
+                                 }
+          }
+	 getche();
+}
+
+

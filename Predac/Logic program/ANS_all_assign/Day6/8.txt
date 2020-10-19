@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int  check(char str[][10],char ch[]);
+void main()
+{
+	int i;
+	char str[5][10];
+	char ch[10];
+	printf("Enter 5 names");
+	for(i=0;i<5;i++)
+		scanf("%s",str[i]);
+	printf("Enter a name to be searched ");
+	scanf("%s",ch);
+	if(check(str,ch))
+		printf("Name found");
+	else
+		printf("Name not found");
+   getch();
+}
+int check(char str[][10],char ch[])
+{
+	int i;
+	for(i=0;i<5;i++)
+	{
+		if(strcmp(str[i],ch)==0)
+		return 1;
+	}
+		return 0;		
+}

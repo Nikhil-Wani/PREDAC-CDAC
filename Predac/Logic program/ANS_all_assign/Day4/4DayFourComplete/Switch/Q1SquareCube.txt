@@ -1,0 +1,41 @@
+
+ #include<stdio.h>
+ #include<conio.h>
+ void main()
+ {
+                 char ch;
+                 int a,ans;
+                 printf(" \n plz enter the number: ");
+                  scanf("%d",a);   
+                 printf("\n plz enter the choice: ");
+                 printf(" \n    a. square   \n \n  b.	Cube  \n \n     c.    exit ");
+                 scanf("%c",&ch);
+               
+            switch(ch)
+          {
+             case 'a' :      {
+                                  ans = (a*a);  
+                                  printf("Square of  %d is %d",ans);
+                                  break;
+                                  }
+
+             case 'b' :      {
+                                  ans = (a*a*a);  
+                                  printf("Cube of   %d  is  %d",ans);
+                                  break;
+                                  }  
+                                
+             case 'c' :      {
+                                    break;
+                                   }
+ 
+             default :          {
+                                    printf(" \n invalid choice ");
+           		break;
+                                }
+
+           }
+	 getche();
+}
+
+

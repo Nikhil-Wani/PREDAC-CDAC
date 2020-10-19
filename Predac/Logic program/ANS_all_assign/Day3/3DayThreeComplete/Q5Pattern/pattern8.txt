@@ -1,0 +1,53 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	int r,s,i,j;
+for(i=1;i<=3;i++)
+{
+	for(s=3;s>=i;s--)
+	{
+		printf(" ");
+	}
+	for(j=1;j<=i;j++)
+	{
+		printf("%d",j);
+
+	}
+
+	for(r=j-2;r>=1;r--)
+	printf("%d",r);
+
+printf("\n");
+
+}
+
+
+for(i=2;i>=1;i--)
+{
+	for(s=2;s>=i-1;s--)
+	{
+		printf(" ");
+	}
+	for(j=1;j<=i;j++)
+	{
+		printf("%d",j);
+
+	}
+
+	for(r=j-2;r>=1;r--)
+	printf("%d",r);
+
+printf("\n");
+
+}
+
+
+getch();
+	
+
+}
+
+
+

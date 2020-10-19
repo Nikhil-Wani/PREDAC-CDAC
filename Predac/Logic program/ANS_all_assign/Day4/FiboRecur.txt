@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+int a,b,c,t;
+void recur(int n);
+void main()
+{
+	t=9;
+	a=0;
+	b=1;
+	c=a+b;
+	printf("%d %d",a,b);
+	recur(c);
+
+getch();
+}
+void recur(int c)
+{
+	if(t>2)
+	{
+		a=b;
+		b=c;
+		t--;
+		printf(" %d ",c);
+		recur(a+b);
+	}
+	else
+		return;
+}

@@ -1,0 +1,27 @@
+
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{
+	FILE *fp;
+	char ch;
+	int count=0;
+	fp = fopen("c:\\tc\\bin\\file\\abcd.txt", "w");
+	
+	while( ( (ch=getchar()) != EOF ) && count<5)
+	{
+		if(ch=='\n')
+		{
+		
+			count++;
+		}
+		fputc(ch,fp);
+		
+	}
+	
+	fclose(fp);
+
+	getche();
+}
+

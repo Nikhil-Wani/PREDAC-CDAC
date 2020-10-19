@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void recur(int);
+void main()
+{
+ int no;
+ printf("Enter number");
+ scanf("%d",&no);
+ printf("Binary of %d=",no);
+ recur(no);
+ getche();
+}
+
+void recur(int num)
+{
+	int rem;
+    if(num<=0)
+	return;
+	rem=num%2;
+	recur(num/2);
+	printf("%d",rem);
+}

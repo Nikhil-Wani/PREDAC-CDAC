@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void rev(char[],int,int);
+void main()
+{
+	char a[]="vita";
+	int l=strlen(a);
+	rev(a,y,l-1);
+
+	printf("%s",a);
+	getche();
+}
+void rev(char a[],int y,int l)
+{
+ char t;
+ if (y>l)
+return;
+else 
+t=a[l];
+a[l]=a[y];
+a[y]=t;
+
+rev(a,y+1;l-1);
+
+}
+
+

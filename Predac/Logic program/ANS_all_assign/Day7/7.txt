@@ -1,0 +1,28 @@
+
+//Q7.	Read 1st 2 line from file
+
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{
+	FILE *fp;
+	char ch;
+	int count=1;
+
+	/*Open a file*/
+	fp = fopen("d:\\ashu\\test.txt", "r");
+
+	/*fgetc fn read a char from file*/
+	while( (ch=fgetc(fp)) != EOF && count<=2)
+	{
+		putchar(ch);
+		if(ch=='\n')
+			count++;
+	}
+
+	/*Close the file*/
+	fclose(fp);
+
+	getch();
+}

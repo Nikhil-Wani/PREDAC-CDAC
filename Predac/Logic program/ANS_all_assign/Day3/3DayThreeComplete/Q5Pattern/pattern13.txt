@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	int i,j;
+for(i=97;i<=99;i++)
+{
+	for(j=97;j<=i;j++)
+	{
+		printf("%c\t",j);
+
+	}
+	printf("\n");
+
+
+}
+
+getch();
+	
+
+}
+
+
+

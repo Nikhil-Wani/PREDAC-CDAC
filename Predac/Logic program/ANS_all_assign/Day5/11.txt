@@ -1,0 +1,52 @@
+#include<stdio.h>
+void matmul(int[][3],int[][3],int[][3],int);
+
+void main()
+{
+	int i,j;
+	int a[3][3],b[3][3],c[3][3];
+	int n=3;
+	printf("Enter the matrix A values");
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<n;j++)
+			scanf("%d",&a[i][j]);
+	        printf("\n");
+	}
+		printf("Enter the matrix B values");
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<n;j++)
+			scanf("%d",&b[i][j]);
+		printf("\n");
+	}
+	matmul(a,b,c,n);
+
+	printf("Matrix C values are ");
+	for(i=0;i<n;i++)
+		{
+			for(j=0;j<n;j++)
+			printf("%d",c[i][j]);
+			printf("\n");
+	}
+			getche();
+}
+
+
+void matmul(int a[][3],int b[][3],int c[][3],int n)
+{
+	int i,j,k,sum;
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<n;j++)
+		{
+			sum=0;
+			for(k=0;k<n;k++)
+			sum=a[i][k]*b[k][j]+sum;
+			c[i][j]=sum;
+		}
+	}
+}
+
+			
+

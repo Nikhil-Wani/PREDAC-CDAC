@@ -1,0 +1,33 @@
+/*
+ABCDEBCDECDEDEE
+ABCDE BCDE CDE DE
+ABCDEBCDECDE
+ABCDEBCDE
+ABCDE
+*/
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+
+int i,j,m;
+char c,k;
+c='A';
+m=5;
+
+ for(i=1;i<=5;i++)
+ {	
+	 for(j=1;j<=m;j++)
+	 {
+	for(k=c;k<='E';k++)
+		printf("%c",k);
+	 c++;
+	
+	 }
+	 c='A';
+	 m--;
+	printf("\n");
+ }
+ getche();
+}

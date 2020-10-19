@@ -1,0 +1,53 @@
+#include<stdio.h>
+#include<conio.h>
+void selection(int,int);
+void main()
+{
+	int a[6];
+	int i,n,t,min;
+	printf("Enter Array Elements :\n ");
+	for(i=1;i<=5;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+
+	selection(a,5);
+
+	for(i=1;i<=5;i++)
+	{
+		printf("%d\t",a[i]);
+	}
+	getch();
+}
+	void selection(int a[] ,int n )
+	{
+		int t,min,i,j;
+	printf("\nSelection Sort:\n");
+
+	for(i=0;i<=n;i++)
+	{
+		min=i;
+		for(j=i+1;j<=n;j++)
+		{
+			if(a[min]>a[j])
+			{
+				min=j;
+			}
+		
+		}
+		t=a[min];
+		a[min]=a[i];
+		a[i]=t;
+	}
+	}
+	
+
+
+
+
+
+
+
+
+
+

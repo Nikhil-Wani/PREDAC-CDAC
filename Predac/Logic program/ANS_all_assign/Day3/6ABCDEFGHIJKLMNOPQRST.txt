@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	int i,j,c=0;
+ for(i=1;i<=4;i++)
+ {
+	
+	 for(j=65;j<='T';j++)
+	 {
+	 printf("%c",j);
+	 j=j+c;
+	 }
+	 c++;
+	
+	 printf("\n");
+ }
+	
+
+
+
+
+
+getch();
+	
+
+}
+
+
+

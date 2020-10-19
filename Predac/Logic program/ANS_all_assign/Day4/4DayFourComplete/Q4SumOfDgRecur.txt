@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+int sumofdigit(int);
+void main()
+{
+	int no, r,m;
+	printf("Enter a number: ");
+	scanf("%d", &no);
+	m=sumofdigit(no);
+	
+	printf("Sum of digit is: %d", m);
+	getch();
+}
+int sumofdigit(int no)
+{
+	int sum=0, r;
+	while(no!=0)
+	{
+		r=no%10;
+		sum=sum+r;
+		no=no/10;
+		sumofdigit(no);
+	}
+	return sum;
+}

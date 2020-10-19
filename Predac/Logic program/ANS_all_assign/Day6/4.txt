@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+int check(char[]);
+void main()
+{
+	int i,n;
+	char ch[20];
+
+	printf("Enter a sentence");
+	gets(ch);
+
+	n=check(ch);
+	printf("Number of words=%d",n);
+	getche();
+}
+int check(char ch[])
+{
+	int i,p=0;
+	printf("%s",ch);
+	for(i=0;ch[i]!='\0';i++)
+	{
+		if((ch[i]>=65&&ch[i]<=90)||(ch[i]>=97&&ch[i]<=122))
+		{
+		    continue;
+		}
+		p++;
+	}
+	return ++p;
+}

@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+int comp(char[],char[]);
+void main()
+{
+    char str[20],str1[20],app1[20];
+	int i;
+	printf("enter the string ");
+	scanf("%s",str);
+	printf("enter the string ");
+	scanf("%s",str1);
+	
+	if(comp(str,str1))
+	printf("same");
+	else
+		printf("Not same");
+
+	getch();
+
+}
+int comp(char str[],char str1[])
+{
+	int i,len=0,j;
+	for(i=0;str[i]!='\0';i++)
+	{
+		if(str[i]==str1[i])
+	     continue;
+		else
+			return 0;
+	}
+	return 1;
+}

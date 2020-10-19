@@ -1,0 +1,50 @@
+/* Q1
+Q1.	Define a structure called cricket that will describe the following information
+Player name
+Team name
+Batting average
+Using cricket, declare an array player with 10 elements and write a program to read the information	about all the 10 players and print a team wise list containing names of players with their battingaverage.
+*/
+
+
+
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void sort();
+struct cricket
+{
+	char pname[20],tname[20];
+	float bAve;
+}p[4];
+struct cricket temp;
+void main()
+{
+	sort();
+	getch();
+}
+
+void sort()
+{
+	int i,j,n=4;
+	for(i=0;i<4;i++)
+	{
+		scanf("%s %s %f",p[i].pname,p[i].tname,&p[i].bAve);
+		printf("\n");
+	}
+
+	for(i=0;i<n-1;i++)
+	{
+		for(j=0;j<n-1-i;j++)
+		{
+			if(strcmp(p[j].tname,p[j+1].tname) > 0)
+			{
+				temp=p[j];
+				p[j]=p[j+1];
+				p[j+1]=temp;
+			}
+		}
+	}
+	for(i=0;i<4;i++)
+		printf("\n %s %s %f",p[i].pname,p[i].tname,p[i].bAve);
+}

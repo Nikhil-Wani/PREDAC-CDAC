@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+void check(char str[]);
+void main()
+{
+
+	int i,j,k;
+	char str[10];
+	printf("please enter a 5 character string");
+	scanf("%s",str);
+		for(k=0;str[k]!='\0';k++);
+		if(k==5)
+		{
+			check(str);
+		}
+		else
+			printf("Invalid character");
+
+	getche();
+} 
+
+void check(char str[])
+{
+	int i,j;
+	char a[10];
+	for(i=0;str[i]!='\0';i++)
+			a[i]=str[i]-30;
+			a[i]='\0';
+
+	for(j=0;a[j]!='\0';j++)
+			printf("%c",a[j]);
+}

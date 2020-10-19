@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<conio.h>
+int prime(int num);
+ void main()
+ {
+	 int i,a,b;
+	 printf("Enter the range");
+	 scanf("%d%d",&a,&b);
+	 printf("Prime numbers between %d and %d",a,b);
+	 for(i=a;i<b;i++)
+	 {
+	 a=prime(i);
+     if(a)
+		 printf("\n%d",a);
+	}
+	 getche();
+}
+
+int prime(int num)
+		 {
+			 int i,flag=0;
+			 for(i=2;i<=num/2;i++)
+		  {
+			 if(num%i==0)
+			 {
+				 flag=1;
+				 break;
+			 }
+		 }
+		 if(flag==0)
+		  return(num);
+		 else
+			 return 0;
+	 }
