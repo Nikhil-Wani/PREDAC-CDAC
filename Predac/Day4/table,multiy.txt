@@ -1,0 +1,16 @@
+#include<stdio.h>
+int multy(int a,int b)
+{	return a*b;}
+int main()
+{	int no,n,i,ans;
+	scanf("%d",&n);//3
+	for(no=1;no<=10;no++)
+	{ for(i=1;i<=n;i++)
+		{ ans=multy(no,i);
+	       printf("%d *%d=%d\t",i,no,ans);
+	     }
+	printf("\n");
+	}
+	getch();
+return 0;
+}

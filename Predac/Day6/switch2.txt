@@ -1,0 +1,31 @@
+
+#include<stdio.h>
+void main()
+{
+int i;
+printf("enter any No. between 1 to 5");
+scanf("%d",&i);
+
+	switch(i)
+	{
+default :
+		printf("default -5");
+
+case 1:
+	printf("I am in 1");
+	break;
+case 2:
+	printf("I am in 2");
+	break;
+case 3:
+	printf("I am in 3");
+	break;
+case 4:
+	printf("I am in 4");
+	break;
+	
+
+	}
+
+
+}

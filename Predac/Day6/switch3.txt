@@ -1,0 +1,28 @@
+   
+#include<stdio.h>
+void main()
+{
+char i;
+printf("enter any char. between a to b");
+scanf("%c",&i);
+
+	switch(i)
+	{
+
+default :
+		printf("default -5");
+           break;
+
+case 'a':
+	printf("I am in a");
+	break;
+case 'b':
+	printf("I am in b");
+	break;
+
+
+
+	}
+
+
+}

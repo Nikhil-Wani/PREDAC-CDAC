@@ -1,0 +1,31 @@
+continue;
+it is used in a loop
+it continue the current loop
+
+
+#include<stdio.h>
+void main()
+{int no,i,cp,cn;
+cp=0;
+cn=0;
+printf("enter only possitive no");
+for(i=1;i<5;i++)
+	{printf("enter no");
+		scanf("%d",&no); 5,-2,8,-9
+		if(no<0)
+		{
+                 printf("no is nagetive");
+			cn++;
+			//continue;
+		}
+		cp++;
+	}
+printf("total  positive no=%d",cp);4
+printf("total negative no=%d",cn);2
+}
+
+
+
+
+
+

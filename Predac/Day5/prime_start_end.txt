@@ -1,0 +1,46 @@
+#include<stdio.h>
+int isodd(int);
+int is_prime(int);
+int main()
+{ int no,start,end,odd,i,r;
+printf("enter start number and end number start< end");
+  scanf("%d %d",&start,&end);//5   50
+  if(start==2)
+	  printf("prime number %d",start);
+  if(start==1)
+	{  printf("prime number %d",2);
+    start=start+2;
+   }
+   
+  odd=isodd(start);
+	  if(odd==0)
+		  i=start+1;
+	  else
+		  i=start;
+  for(;i<=end;i=i+2)
+  {
+  r=is_prime(i);
+ if(r==0)
+   printf("Number is prime%d",i);
+  }
+ getch(); return 0;
+}
+int is_prime(int no)
+{int i,c=0;
+ for(i=2;i<=no/2;i++)
+ { if(no%i==0)
+   { c++;
+   break;
+   }
+  }
+ return c; 
+}
+int isodd(int n)
+{ 
+     if(n%2!=0)
+	return n;
+else
+	return 0;
+	
+
+}

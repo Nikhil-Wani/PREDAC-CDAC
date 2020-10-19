@@ -1,0 +1,30 @@
+
+#include<stdio.h>
+void main()
+{
+char i,a,b;
+printf("enter choice a:addition\nb:subtraction\ne:exit");
+scanf("%c",&i);
+if(c=='A'||c=='a'||c=='b'||c=='B')
+{
+printf("enter two number");
+	scanf("%d %d",&a,&b);
+}
+	switch(i)
+	{
+
+default :
+		printf("enter valid choice");
+break;
+case 'a':
+case 'A':
+	printf("%d",a+b);
+	break;
+case 'b':
+case 'B':
+	printf("%d",a-b);
+	break;
+case 'e':
+case 'E':exit(0);
+ }
+}
