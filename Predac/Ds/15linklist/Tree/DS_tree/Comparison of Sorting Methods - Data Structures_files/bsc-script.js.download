@@ -1,0 +1,6 @@
+$(document).ready(function () {
+    $('.bsc-toggle-btn').click(function () {
+        $('.bsc-topics-list').css('display', 'none');
+    } );
+} );
+    

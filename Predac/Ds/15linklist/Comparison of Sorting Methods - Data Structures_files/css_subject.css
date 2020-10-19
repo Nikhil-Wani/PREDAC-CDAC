@@ -1,0 +1,481 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+.bsc-header-top{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.bsc-caption{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-right: 10px;
+    text-align: right;
+    margin-top: -30px;
+}
+
+.bsc-navbar{
+    height: 40px;
+    background-color: #162f59;
+    text-align: center;
+}
+.bsc-navbar a{
+    text-decoration: none;
+}
+.bsc-navbar-items{
+    color: #fff;
+    line-height: 40px;
+    font-size: 1.3em;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.bsc-navbar-items:hover{
+    color: #e00d50;
+    text-decoration: none;
+}
+nav{
+    position: sticky;
+    top: 0;
+    box-shadow: 1px 2px 5px #333;
+    z-index: 9999;
+}
+.bsc-toggle-btn{
+    float: right;
+    text-align: center;
+    height: 40px;
+    width: 50px;
+    font-size: 1.6em;
+    background-color: #162f59;
+    border: 0px;
+    cursor: pointer;
+    display: none;
+}
+nav .bsc-toggle-btn span{
+    color: #FFF;
+    padding: 5px 0px;
+}
+.jumbotron{
+    background-color: #e00d50;
+    color: #fff;
+    height: 100px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.bsc-subject-title{
+    font-family: 'Comfortaa', cursive;
+    font-weight: bolder;
+}
+.bsc-topics-list{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f2f4f7;
+}
+.bsc-ads-bar{
+    margin-top: 0px;
+    padding: 2px;
+    text-align: center;
+    background-color: #f2f4f7;
+    
+}
+.bsc-list-title{
+    margin-top: 10px;
+    line-height: 1.5em;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #e00d50;
+}
+
+.bsc-close-btn{
+    color: #000;
+    z-index: 10000;
+    cursor: pointer;
+    display: block;
+    font-size: 2em;
+    line-height: 0.8em;
+    float: right;
+    display: none;
+}
+
+.bsc-close-btn:hover{
+    border: 1px solid #000;
+    text-decoration: none;
+}
+    
+
+
+.bsc-side-list{
+    margin-left: 0px;
+    padding-left: 15px;
+    padding-right: 0px;
+}
+.bsc-side-list li{
+    list-style: none;
+    display: block;
+}
+.bsc-list-items a{
+    line-height: 2em;
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding-left: 3px;
+}
+
+.bsc-list-items{
+    padding-left: 10px;
+}
+
+.bsc-list-items a:hover{
+    background-color: #f9b3ca;
+    border-top: 1px dashed #e00d50;
+    border-bottom: 1px dashed #e00d50;
+    border-right: 1px dashed #e00d50;
+    border-left: 5px solid #e00d50;
+    font-weight: bold;
+    padding-left: 3px;
+}
+.bsc-active-item{
+    background-color: #f9b3ca;
+    color: #FFF;
+    border-top: 1px dashed #e00d50;
+    border-bottom: 1px dashed #e00d50;
+    border-right: 5px solid #e00d50;
+    border-left: 1px dashed #e00d50;
+    font-weight: bold;
+    
+}
+
+.bsc-main-content{
+    margin: 0px;
+}
+.bsc-h-ad{
+    text-align: center;
+    height: 130px;
+}
+.bsc-next-previous-box{
+    background-color: #f4f5f7;
+    line-height: 35px;
+    margin: 3px 0px;
+    border-top: 1px solid #c8cbd1;
+    border-bottom: 1px solid #c8cbd1;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+.bsc-btn{
+    border-radius: 5px;
+    padding: 3px 5px;
+    color: #000;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+.bsc-btn:hover{
+    background-color: #cfd2d6;
+    border-radius: 5px;
+    padding: 3px 5px;
+    color: #000;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.bsc-previous-btn{
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
+.bsc-next-btn{
+    font-size: 1.5em;
+    line-height: 1em;
+    float: right;
+    margin-top: 5px;
+}
+
+.bsc-topic-title{
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    padding: 0px 20px;
+}
+
+.bsc-content{
+    text-align: justify;
+    line-height: 2em;
+}
+
+.bsc-question{
+    color: #e00d50;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.bsc-program-title{
+    color: #162f59;
+    margin-top: 0px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.bsc-syntax{
+    text-align: center;
+    border: 2px dotted #288202;
+    border-radius: 30px;
+    font-weight: bolder;
+    background-color: #bdf2a7;
+    padding: 0px 10px;
+    font-size: 1.5em;
+}
+
+.green{
+    color: green;
+}
+
+.bsc-equation{
+    text-align: center;
+    font-weight: bold; 
+    font-size: 1.5em;
+}
+
+.bsc-subHeading{
+    color: #162f59;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.bsc-mediumImage{
+    width: 70%;
+    height: auto;
+}
+
+.bsc-definition{
+    text-align: center;
+    border: 2px solid #e00d50;
+    border-radius: 30px;
+    font-weight: bolder;
+    background-color: #f9d6ee;
+    padding: 0px 10px;
+}
+
+.bsc-content-img{
+    width: 30%;
+    height: auto;
+}
+
+.bsc-img-lg{
+    width: 100%;
+    height: auto;
+}
+
+.bsc-img-md{
+    width: 75%;
+    height: auto;
+}
+
+.bsc-img-sm{
+    width: 50%;
+    height: auto;
+}
+
+.bsc-img-xs{
+    width: 25%;
+    height: auto;
+}
+
+.bsc-steps{
+    list-style: none;
+}
+
+.steps{
+    color: #162f59;
+    font-weight: bolder;
+}
+
+.bsc-box-out{
+    background-color: aliceblue;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px #999;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+}
+
+.bsc-code-box{
+    margin: 10px;
+    border-left: 5px solid #162f59;
+}
+
+.bsc-code{
+    border: none;
+    background-color: #FFF;
+    border-radius: 0px;
+    margin-top: 5px;
+}
+
+.bsc-note-box{
+    border-left: 5px solid #e8af04;
+    padding: 10px;
+    background-color: #f9e9b6;
+}
+
+.bsc-note-box-icon{
+    background-color: #e8af04;
+    
+}
+
+.bsc-note-box-points{
+    
+}
+
+.bsc-formulae{
+    color: #162f59;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.bsc-example{
+    color: #162f59;
+    font-size: 1.5em;
+    font-weight: bolder;
+    
+}
+
+.bsc-list-style-none{
+    list-style: none;
+}
+
+.bsc-footer{
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+    background-color: #162f59;
+    color: #FFF;
+    text-align: center;
+}
+
+.bsc-footer a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.bsc-footer a:hover{
+    font-weight: bolder;
+    color: #e00d50;
+}
+
+.bsc-footer .bsc-social{
+    color: #162f59;
+}
+
+.bsc-footer .bsc-social:hover{
+    color: #FFF;
+    background-color: #e00d50;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.fa {
+    background-color:  #FFF;
+    padding-top: 8px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.bsc-social{
+    color: #162f59;
+}
+
+
+
+
+
+/*! Very small Devices */
+@media (min-width: 576px) {
+    
+}
+
+/*! Mobile Devices */
+@media (max-width: 768px) {
+    .bsc-caption{
+        display: none;
+    }
+    .bsc-hide{
+        display: none;
+    }
+    .bsc-navbar-items{
+        margin-left: 10px;
+        margin-right: 10px;
+        float: left;
+        
+    }    
+
+    #topics-list{
+        display: none;
+    }
+    .bsc-toggle-btn{
+        display: block;
+    }
+    .bsc-list-items a{
+        padding-left: 6px;        
+    }
+    .bsc-close-btn{
+        display: block;
+        margin-right: 20px;
+    }
+    
+    .bsc-side-list{
+        margin-left: 0px;
+    }
+    .bsc-main-content{
+        border: none;
+        
+    }
+    
+    .bsc-content{
+        padding-left: 25px;
+        padding-right: 30px;
+    }
+    .bsc-bell{
+        display: none;
+    }
+    
+    .bsc-centered{
+        text-align: center;
+    }
+
+    .bsc-img-sm{
+        width: 75%;
+        height: auto;
+    }
+}
+
+/*! Tablet Devices */
+@media (max-width: 992px) { 
+    
+    .bsc-header-top{
+        text-align: center;        
+    }
+    .bsc-caption{
+        text-align: center;
+        margin-top: 0px;
+    }
+    .bsc-logo{
+        width: 50%;
+    }
+}
+
+/*! Desktop Devices */
+@media (min-width: 1200px) { 
+}

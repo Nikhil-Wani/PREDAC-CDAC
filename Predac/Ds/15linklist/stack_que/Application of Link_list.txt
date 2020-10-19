@@ -1,0 +1,15 @@
+Applications of linked list in real world-
+
+Image viewer – Previous and next images are linked, hence can be accessed by next and previous button.
+Previous and next page in web browser – We can access previous and next url searched in web browser by pressing back and next button since, they are linked as linked list.
+Music Player – Songs in music player are linked to previous and next song. you can play songs either from starting or ending of the list.
+
+
+circular list
+A singly linked circular list is a linked list where the last node in thelist points to the first node in the list. A circular list does not contain NULL pointers.
+
+A good example of an application where circular linked list should be used is a timesharing problem solved by the operating system.
+
+In a timesharing environment, the operating system must maintain a list of present users and must alternately allow each user to use a small slice of CPU time, one user at a time. The operating system will pick a user, let him/her use a small amount of CPU time and then move on to the next user, etc.
+
+For this application, there should be no NULL pointers unless there is absolutely no one requesting CPU time.

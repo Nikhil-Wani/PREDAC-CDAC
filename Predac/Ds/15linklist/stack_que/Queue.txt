@@ -1,0 +1,25 @@
+Queue Data Structures
+Queue is also an abstract data type or a linear data structure, in which the first element is inserted from one end called REAR(also called tail), and the deletion of exisiting element takes place from the other end called asFRONT(also called head). 
+
+This makes queue as FIFO data structure, which means that element inserted first will also be removed first.
+
+The process to add an element into queue is called Enqueue and the process of removal of an element from queue is called Dequeue.
+
+Implementation of Queue
+Keyboard input
+Data transfer on network
+sending sms 
+sending email
+
+
+Types of Queue
+
+Priority queue:
+Priority queue is an abstract data type which is like a regular queue or stack data structure, but where additionally each element has a “priority” associated with it. In a priority queue, an element with high priority is served before an element with low priority. If two elements have the same priority, they are served according to their order in the queue.
+
+
+Dequeue :The word dequeue is short form of double ended queue. In a
+dequeue , insertion as well as deletion can be carried out either at the rear
+end or the front end.
+
+Circular queue

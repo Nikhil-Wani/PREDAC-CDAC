@@ -1,0 +1,144 @@
+//Stack
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<ctype.h>
+void main()
+{
+int i,stack[15],ch=0,top=0,item,temp;
+while(ch!=7)
+{
+   clrscr();
+   printf("\t\t\t\tMENU");
+   printf("\n1.Build stack\n2.Print top element without popping\n3.Duplication\n4.Swap top two elements\n5.Clear the stack\n6.Print whole stack\n7.Exit\n");
+   scanf("%d",&ch);
+   if(ch<1&&ch>7&&isdigit(ch)==0)
+   continue;
+   switch(ch)
+   {
+   case 1:build();
+	 	  break;
+   case 2:top();
+	 
+	  break;
+   case 3:duplicate();
+	 
+	  break;
+	case 4:
+	 swap();
+	  break;
+   case 5:clear();
+	  	  break;
+   case 6:print();
+	 	 break;
+   case 7:
+	   clrscr();
+	   printf("\n\n\n\n\n\t\t\t\tThank You");
+	   getch();
+	   exit(0);
+   }
+}
+getch();
+}
+
+
+
+void build()
+{
+
+
+ if(top==15)
+	  {	printf("\nOverflow\n");
+		getch();
+	  }
+	  else
+		{
+		 printf("\nEnter the item to be inserted\n");
+		 scanf("%d",&item);
+		 stack[top++]=item;
+		 }
+}
+
+void top()
+{
+ if(top==0)
+		{
+		printf("\nThe stack is empty so cannot display\n");
+		getch();
+		}
+	  else
+	  {
+	  printf("\nThe top element=%d\nThe No. of elements=%d\n",stack[top-1],top);
+	  getch();
+	  }
+
+}
+
+void duplicate()
+{
+
+ if(top==0)
+		{
+		printf("\nThe stack is empty so cannot duplicate\n");
+		getch();
+		}
+	  else
+	  if(top==15)
+		{
+		printf("\nThe stack is full so cannot duplicate\n");
+		getch();
+		}
+	  else
+	  {
+	  stack[top++]=stack[top-1];
+	  printf("The element is duplicated");
+	  getch();
+	  }
+
+}
+void swap()
+{
+
+ if(top>=2)
+	  {
+	  temp=stack[top-1];
+	  stack[top-1]=stack[top-2];
+	  stack[top-2]=temp;
+	  printf("\nThe elements are swapped");
+	  getch();
+	  }
+	  else
+	  {
+	  printf("\ncannot swap as less than 2 elements are in stack\n");
+	  getch();
+	  }
+}
+
+
+void clear()
+{
+
+top=0;
+	  printf("\n The stack is cleared\n");
+	  getch();
+
+
+}
+
+void print()
+{
+
+
+if(top==0)
+		printf("\nStack empty");
+	 else
+		{
+		for(i=0;i<top;i++)
+			{
+			 printf("\nstack[%d]=%d",i+1,stack[i]);
+			 }
+		 }
+	 getch();
+
+
+}

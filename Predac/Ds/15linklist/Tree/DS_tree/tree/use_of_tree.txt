@@ -1,0 +1,7 @@
+Main applications of trees include:
+1. Manipulate hierarchical data.
+2. Make information easy to search (see tree traversal).
+3. Manipulate sorted lists of data.
+4. As a workflow for compositing digital images for visual effects.
+5. Router algorithms
+6. Form of a multi-stage decision-making

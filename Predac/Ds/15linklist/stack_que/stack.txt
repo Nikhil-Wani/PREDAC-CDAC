@@ -1,0 +1,29 @@
+Stacks are linear data structures. This means that their contexts are stored in what looks like a line (although vertically). 
+This linear property, however, is not sufficient to discriminate a stack from other linear data structures. 
+
+
+
+
+For example, an array is a sort of linear data structure.
+ However, you can access any element in an array--not true for a stack, since you can only deal with the element at its top.
+
+One of the distinguishing characteristics of a stack, and the thing that makes it useful, is the order in which elements come out of a stack. Let's see what order that is by looking at a stack of letters... 
+
+You'll notice that the stack enforces a certain order to the use of its contents, i.e., the Last thing In is the First thing Out. Thus, we say that a stack enforces LIFO order. 
+
+ Here are the minimal operations we'd need for an abstract stack (and their typical names):
+
+    Push: Places an object on the top of the stack.
+
+    Pop: Removes an object from the top of the stack and produces that object.
+
+    IsEmpty: Reports whether the stack is empty or not. 
+
+Implimentation of stack
+Browser back button
+undo operation
+mail inbox
+receiving sms in our mobile 
+bracket matching in program
+
+
