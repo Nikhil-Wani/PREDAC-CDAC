@@ -1,0 +1,19 @@
+inear Data Structure:
+
+Linear data structure is linear if element is adjacent to each other. It has exactly two
+neighbors elements to which it is connected as its previous and next member.
+Example of Linear Data Structure
+
+Array
+Linked List
+Stack
+Queue
+
+Non- Linear Data Structure
+
+Non-Linear data structure is that if one element can be connected to more than two
+adjacent element then it is known as non-linear data structure.
+Example of non Linear Data Structure:
+
+Tree
+Graph 

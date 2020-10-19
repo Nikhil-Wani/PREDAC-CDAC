@@ -1,0 +1,150 @@
+#include<stdio.h>
+#include<malloc.h>
+#include<string.h>
+struct emp
+{int no;
+struct emp *next;
+};
+struct emp *cur,*prev,*start,*last,*temp=NULL;
+void add();
+void insert();
+void sort();
+void del();
+void diplay();
+void main()
+{ int cho;
+ while(1)
+	{
+	printf("enter your choice 1-add,2-insert,3-delete,4-sort,5-display,6-exit");
+	scanf("%d",&cho);
+	
+	switch(cho)
+	{
+	case 1:add();
+		break;
+	case 2:insert();
+		break;
+	case 3:del();
+		break;
+	case 4:sort();
+		break;
+	case 5:diplay();
+			break;
+	case 6:exit(0);
+		break;
+		
+	}
+	}
+	
+}
+
+void add()
+{	char c='y';
+	while(c=='y'||c=='Y')
+	{ temp =(struct emp *)malloc(sizeof(struct emp));
+		printf("\tenter no");
+		scanf("%d",&temp->no);
+				
+		temp->next=NULL;
+
+		if(start==NULL)
+		{ start=temp;
+		last=temp;
+		}
+		else{
+		last->next=temp;
+		last=temp;
+		}
+		printf("y/n");
+		c=getche();
+	}
+
+
+}
+void diplay()
+{
+
+	for(cur=start;cur!=NULL;cur=cur->next)
+	{
+	printf("\n%d",cur->no);
+	}
+
+
+}
+
+void insert()
+{	temp=(struct emp *)malloc(sizeof(struct emp));
+	printf("enter no");
+	scanf("%d",&temp->no);
+	temp->next=NULL;
+	if(temp->no<start->no)
+	{
+	temp->next =start;
+	start=temp;	  
+		}
+	else if(temp->no >last->no )
+	{last->next=temp;
+	last=temp;
+	}	else
+	  {	cur=start;
+	 	while(temp->no >cur->no )
+		{	prev=cur;
+		cur=prev->next;
+			}
+	temp->next =cur;
+	prev->next =temp;
+	}
+
+
+}
+void sort()
+{int val;
+	
+	
+for(prev=start;prev->next!=NULL;prev=prev->next)
+	{		
+		for(cur=prev->next;cur!=NULL;cur=cur->next)
+		{
+		
+		if(prev->no>cur->no)
+		{
+		
+		val=prev->no ;
+		prev->no =cur->no;
+		cur->no =val;
+		
+		}
+		
+		}
+
+	}
+
+}
+void del()
+{ int delno;
+printf("enter data to delete");
+scanf("%d",&delno);
+	if(delno==start->no)
+	{
+	cur=start;
+	start=cur->next;
+	free(cur);
+	}
+	else
+	{   cur=start;
+		while(delno!=cur->no)
+		{ prev=cur;
+		 cur=prev->next;
+		} 
+      prev->next=cur->next;
+	if(cur==last)
+	{  last=prev;	
+           //last->next=NULL;
+         }
+	
+       free(cur);
+	
+	}
+
+}
+
