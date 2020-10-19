@@ -1,0 +1,93 @@
+class MyClass
+{
+	private:
+		int data; // instance member
+	public:
+		void setData(int data) //member functions
+		{
+			this->data=data;
+		}
+		int getData()
+		{
+			return data;
+		}
+};
+int main()
+{
+	MyClass m1; // object
+
+	m1.setData(100);
+
+	cout<<m1.getData()<<endl;
+
+	MyClass m2; // object
+
+	m2.setData(200);
+
+	cout<<m2.getData()<<endl;
+}
+instance means object.
+
+instance member is the one which is allocated memory as soon as instance (object) gets created.
+
+
+instance members are having those many copies as of no.of objects.
+
+member functions are having only one copy in the memory irrespective of no. of objects created.
+
+what is "this" ?
+
+"this" is a pointer to current object or invoking object.
+
+why we need "this"?
+
+member functions are having only one copy in the memory irrespective of no. of objects created. In that scenario, how a member function know that which object is calling? here "this" pointer solves the problem. since "this" pointer points to the invoking object, with the help of "this" , member function comes to know regarding invoking object.
+
+
+in object oriented programming sometimes we need a data having only one copy and that to be shared between no. of objects created. in that scenario we need to declare data as "static".
+
+i.e. static members are allocated memory even before an instance (object) gets created. static data is shared bet'n all the objects.
+
+Example of static data..
+
+	class Student
+	{
+		name,age,address - non-static
+
+		int count - static (in order to keep a track of no. of objects created
+
+	}
+
+
+	class Account
+	{
+		accid,name,balance -  non-static
+		rate_of_interest - static (to be shared by all accounts)
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

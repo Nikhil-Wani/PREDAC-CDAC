@@ -1,0 +1,24 @@
+What is Reusability?
+
+it means designing a new "type" using an existing "type".
+
+e.g. while designing "Car" we can consider existing types such as "FourWheeler" and "Engine".
+
+Reusability can be achieved via two ways:
+a) inheritance (is-a  relationship)
+b) composition (has-a  relationship)
+
+which is to use when?
+
+when u realize that a new type is "same-as" existing type, u can go for inheritance.
+when u realize that new type just needs some functionality of existing type , u can go for composition.
+hence in the above example Car and FourWheeler will have "is-a" relationship whereas Car and Engine will have "has-a" relationship.
+
+
+
+
+
+
+
+
+

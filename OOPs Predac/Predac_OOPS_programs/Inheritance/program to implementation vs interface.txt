@@ -1,0 +1,18 @@
+program to implementation - gives u maintenance drawback
+
+void perform()
+{
+	Triangle t=new Triangle();
+		t.draw();
+		or
+	Circle c=new Circle();
+		c.draw();
+}
+
+
+	vs
+program to interface - zero maintenance
+void perform(Shape *ptr)
+{
+	ptr->draw();
+}

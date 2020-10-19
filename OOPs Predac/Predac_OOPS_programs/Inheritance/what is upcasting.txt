@@ -1,0 +1,3 @@
+what is upcasting?
+
+when base class pointer points to sub class object or address of sub class object u assign to base pointer it is known as upcasting.

@@ -1,0 +1,11 @@
+
+
+what is Binding?
+
+resolving function call to a function body is called as Binding.
+when it happens during compile time , it is called as "Early Binding".
+when it happens during runtime it is called as "Late Binding" or "Runtime Polymorphism" or "Dynamic Polymorphism".
+
+From Object Oriented Point of view,in case of Early binding "type" is considered where as in case of Late binding "content" is considered.
+
+if u want "content" to be considered at the time of method invocation, u need to define parent class method as "virtual".

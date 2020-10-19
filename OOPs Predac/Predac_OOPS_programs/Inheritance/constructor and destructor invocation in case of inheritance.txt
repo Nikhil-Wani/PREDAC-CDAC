@@ -1,0 +1,8 @@
+
+
+constructor and destructor invocation in case of inheritance.
+
+when u instantiate child class, child class constructor invokes parent class default constructor. if it is not available u get an error. how will u solve this error? By invoking parent class parameterized constructor explicitly.
+
+destructor is called in the reverse order. i.e. first child class and then parent class.
+

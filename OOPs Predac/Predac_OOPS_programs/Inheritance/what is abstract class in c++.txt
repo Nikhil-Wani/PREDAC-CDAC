@@ -1,0 +1,9 @@
+when a class contains at least one pure virtual function, the class becomes abstract in C++.
+
+a pure virtual function is a function which is declared with the keyword virtual and is assigned to zero.
+
+a) abstract class can contain pure virtual functions,virtual functions as well as non-virtual functions. 
+
+b) abstract class can not be instantiated as it is an incomplete class.
+
+c) child class of an abstract class must define pure virtual function/s declared inside parent class or else u can not instantiate that child class.

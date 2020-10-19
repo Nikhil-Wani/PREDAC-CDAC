@@ -1,0 +1,53 @@
+Redefinition vs Overriding
+
+when child class redefines non-virtual function of parent , it is known as redefinition e.g.
+
+class base
+{
+	public:
+		void disp()
+		{
+		}
+};
+class sub:public base
+{
+	public:
+		void disp()
+		{
+		}
+};
+
+
+
+
+when child class redefines virtual function of parent , it is known as overriding e.g.
+
+class base
+{
+	public:
+		virtual void disp()  // overridden
+		{
+		}
+};
+class sub:public base
+{
+	public:
+		void disp()   // overriding
+		{
+		}
+};
+
+what is the use of "virtual" function?
+virtual function is used in case of late binding.
+
+
+
+
+
+
+
+
+
+
+
+

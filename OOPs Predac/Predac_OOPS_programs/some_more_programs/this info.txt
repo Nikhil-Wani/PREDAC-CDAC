@@ -1,0 +1,12 @@
+this pointer
+
+this pointer stores the address of invoking object.it is an implicit argument passed to a member function you invoke.
+
+what is the importance of "this pointer"?
+
+in an object oriented programming member functions are having only one copy inside memory irrespective of number of objects created. In this scenario how member function will come to know for which object it has to work?
+ans- this pointer.
+i.e. since "this" pointer stores address of invoking object,  and it is an implicit argument passed to every member function which will come to know which object it has to work for.
+
+this pointer can not be worked with static members. why?
+because "this" pointer stores address of invoking object and static members are not associated with object at all.

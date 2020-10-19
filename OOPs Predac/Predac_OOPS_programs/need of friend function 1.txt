@@ -1,0 +1,112 @@
+friend keyword
+
+friend keyword can be applied to function as well as class.
+
+friend function is a function which can access private members of a class in which it is declared as "friend".
+
+Application of friend function:- In case of operator overloading there are some cases where without friend function u can not overload some operators.
+
+
+class First
+{
+	int num1;
+	public:
+		First(int num1)
+		{
+			this->num1=num1;
+		}
+		int getNum1()
+		{
+			return num1;
+		}
+};
+class Second
+{
+	int num2;
+	public:
+		Second(int num2)
+		{
+			this->num2=num2;
+		}
+		int getNum2()
+		{
+			return num2;
+		}
+};
+		
+
+// define a global function "compare" which will compare data of both the classes.
+if num1 > num2 return 1
+
+num2 > num1 return -1
+
+else 0 if both r equal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int compare(First &f,Second &s)
+{
+	if(f.getNum1() > s.getNum2())
+	{
+		return 1;
+	}
+	else if(f.getNum1() < s.getNum2())
+	{
+		return -1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+int main()
+{
+	First f(100); Second s(200);
+	cout<<compare(f,s)<<endl;
+	return 0;
+}
+
+
+
+
+ 
+
+
+
+	
+
+
+
+
+
+
+

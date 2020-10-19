@@ -1,0 +1,20 @@
+inheritance
+
+Engine
+	code for petrol engine
+
+Car:Engine
+	tight coupling
+
+if code inside Engine is change to diesel engine, Car will get affected.
+
+
+composition
+
+			Engine
+Petrol_Engine			Diesel_Engine
+
+Car
+	Engine *ptr; // can either point to petrol or diesel engine
+
+loose coupling. Tomorrow if one more  engine is introduced inside Engine hierarchy e.g. "Boxer_Engine" , Car class will not get affected. because it has Engine pointer as a member which can point to any derived type of Engine . i.e. program to interface.
