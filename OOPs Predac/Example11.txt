@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+class MyClass
+{
+	private:
+		int num;
+	public:
+		MyClass(int num)
+		{
+			this->num=num;
+		}
+		int getNum()
+		{
+			return num;
+		}
+};
+void fun()
+{
+	MyClass m1(20);
+	cout<<m1.getNum()<<endl;
+}
+int main()
+{
+	fun();
+}
+
+

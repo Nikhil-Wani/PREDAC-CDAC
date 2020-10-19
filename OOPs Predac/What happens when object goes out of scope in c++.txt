@@ -1,0 +1,13 @@
+int main()
+{
+	Number n1; // object or instance
+	n1.setNum(100);
+	cout<<n1.getNum()<<endl;
+} // here : scope of "n1" is over.
+
+What happens when object goes out of scope in c++:
+
+a) destructor is called
+	destructor is a special member function which is invoked as soon as object goes out of scope. it can not have any argument. it allows you to release the resources if any e.g. database connection, file etc.
+
+b) members are destroyed

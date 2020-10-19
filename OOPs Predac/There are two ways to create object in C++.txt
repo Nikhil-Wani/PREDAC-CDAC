@@ -1,0 +1,14 @@
+There are two ways to create object in C++
+
+stack-based
+	e.g
+
+Number n1;
+	they are efficient but not flexible
+
+heap-based
+	e.g.
+
+Number *n1=new Number;
+	they are flexible , used in case of dynamic polymorphism but slow.
+

@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class Number
+{
+	private:
+		int num; // instance member
+	public: 
+		void setNum(int num)  // member functions
+		{
+			this->num=num;
+		}
+		int getNum()
+		{
+			return num;
+		}
+};
+int main()
+{
+	Number n1; // object or instance
+	n1.setNum(100);
+	cout<<n1.getNum()<<endl;
+
+	Number n2;
+	n2.setNum(200);
+	cout<<n2.getNum()<<endl;
+}

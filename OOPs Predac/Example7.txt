@@ -1,0 +1,67 @@
+/*
+
+heap based object's destructor does not get called implicitly u need to call it explicitly using "delete".
+
+*/
+#include<iostream>
+using namespace std;
+class Number
+{
+	private:
+		int num; // instance member
+	public: 
+		void setNum(int num)  // member functions
+		{
+			this->num=num;
+		}
+		int getNum()
+		{
+			return num;
+		}
+		Number()
+		{
+			cout<<"in Number default constructor";
+		}
+		Number(int num)
+		{
+			this->num=num;
+			cout<<"in Number param constructor";
+		}
+		~Number()
+		{
+			cout<<"in Number destructor"<<endl;
+		}	
+};
+int main()
+{
+	Number n1; // object or instance
+	n1.setNum(100);
+	cout<<n1.getNum()<<endl;
+
+	Number n2;
+	n2.setNum(200);
+	cout<<n2.getNum()<<endl;
+
+	Number n3(300);
+	cout<<n3.getNum()<<endl;
+
+	Number *n4=new Number;
+	n4->setNum(400);
+	cout<<n4->getNum()<<endl;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+/*
+when we create child class object, child class constructor invokes default constructor of parent class.
+*/
+#include<iostream>
+using namespace std;
+class Base
+{
+	private:
+		int num1;
+	public:
+		void setNum1(int num1)
+		{
+			this->num1=num1;
+		}
+		int getNum1()
+		{
+			return num1;
+		}
+		Base()
+		{
+			cout<<"Base default constructor"<<endl;
+		}
+};
+class Sub:public Base
+{
+	private:
+		int num2;
+	public:
+		void setNum2(int num2)
+		{
+			this->num2=num2;
+		}
+		int getNum2()
+		{
+			return num2;
+		}
+		Sub()
+		{
+			cout<<"Subs default constructor"<<endl;
+		}
+};
+int main()
+{
+	Sub s;
+	s.setNum1(100);
+	s.setNum2(200);
+	cout<<s.getNum1()<<"\t"<<s.getNum2()<<endl;
+}

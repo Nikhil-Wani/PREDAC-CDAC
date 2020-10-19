@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+class MyClass
+{
+	private:
+		int num;
+	public:
+		MyClass(int num)
+		{
+			this->num=num;
+		}
+		int getNum()
+		{
+			return num;
+		}
+		friend void fun();
+};
+
+/* friend function is a function which can access private member of a class in which it is declared as "friend". friend concept is exactly opposite of "data hiding" concept of OOPS.
+*/
+void fun()
+{
+	MyClass m1(20);
+	cout<<m1.num<<endl;
+}
+int main()
+{
+	fun();
+}
+
+

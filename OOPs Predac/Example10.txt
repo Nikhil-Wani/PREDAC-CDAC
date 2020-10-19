@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+class MyClass
+{
+	private:
+		int num;
+	public:
+		MyClass(int num)
+		{
+			this->num=num;
+		}
+		int getNum()
+		{
+			return num;
+		}
+};
+int main()
+{
+	// create object of MyClass and display its num.
+}

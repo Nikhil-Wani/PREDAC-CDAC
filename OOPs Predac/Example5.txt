@@ -1,0 +1,60 @@
+/*
+the moment we define any constructor inside the class, compiler will not provide default constructor.
+*/
+
+#include<iostream>
+using namespace std;
+class Number
+{
+	private:
+		int num; // instance member
+	public: 
+		void setNum(int num)  // member functions
+		{
+			this->num=num;
+		}
+		int getNum()
+		{
+			return num;
+		}
+		Number()
+		{
+			cout<<"in Number default constructor";
+		}
+		Number(int num)
+		{
+			this->num=num;
+			cout<<"in Number param constructor";
+		}
+		
+
+};
+int main()
+{
+	Number n1; // object or instance
+	n1.setNum(100);
+	cout<<n1.getNum()<<endl;
+
+	Number n2;
+	n2.setNum(200);
+	cout<<n2.getNum()<<endl;
+
+	Number n3(300);
+	cout<<n3.getNum()<<endl;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

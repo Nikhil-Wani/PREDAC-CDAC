@@ -1,0 +1,89 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+class Account
+{
+	private:
+		int acc_id;
+		char name[20];
+		char type[20];
+		double balance;
+		static int rate_of_interest;  // decl
+
+	public:
+		Account(int acc_id,char *name,char *type,double balance)
+		{
+			this->acc_id=acc_id;
+			strcpy(this->name,name);
+			strcpy(this->type,type);
+			this->balance=balance;
+		}
+		int getAccid()
+		{
+			return acc_id;
+		}
+		void setName(char *name)
+		{
+			strcpy(this->name,name);
+		}
+		char* getName()
+		{
+			return name;
+		}
+		void setType(char *type)
+		{
+			strcpy(this->type,type);
+		}
+		char* getType()
+		{
+			return type;
+		}
+		void setBalance(double balance)
+		{
+			this->balance=balance;
+		}
+		double getBalance()
+		{
+			return balance;
+		}
+		static int getRateOfInterest()
+		{
+			return rate_of_interest;
+		}
+};
+int Account::rate_of_interest=9;   // definition
+
+int main()
+{
+	Account a1(1,"Abc","Saving",10000);
+	Account a2(2,"Xyz","Current",70000);
+
+	cout<<a1.getBalance()<<endl;
+	cout<<a2.getBalance()<<endl;
+	cout<<Account::getRateOfInterest()<<endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+

@@ -1,0 +1,55 @@
+destructor invocation in case of inheritance.
+
+when child class object goes out of scope ,
+	a) child class destructor is called
+	b) parent class destructor is called
+
+class Base
+{
+	private:
+		int num1;
+	public:
+		~Base()
+		{
+			cout<<"Base destructor"<<endl;
+		}
+		void setNum1(int num1)
+		{
+			this->num1=num1;
+		}
+		int getNum1()
+		{
+			return num1;
+		}
+};
+class Sub:public Base
+{
+	private:
+		int num2;
+	public:
+		~Sub()
+		{
+			cout<<"Sub destructor"<<endl;
+		}
+		void setNum2(int num2)
+		{
+			this->num2=num2;
+		}
+		int getNum2()
+		{
+			return num2;
+		}
+};
+int main()
+{
+	Sub s;   
+	s.setNum1(100);
+	s.setNum2(200);
+	cout<<s.getNum1()<<"\t"<<s.getNum2()<<endl;
+}
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+constructor invocation in case of inheritance.
+
+when u instantiate child class, child class constructor invokes parent class default constructor.
+
+class Base
+{
+	private:
+		int num1;
+	public:
+		Base(int k)
+		{
+			num1=k;
+			cout<<"Base param constructor"<<endl;
+		}
+		void setNum1(int num1)
+		{
+			this->num1=num1;
+		}
+		int getNum1()
+		{
+			return num1;
+		}
+};
+class Sub:public Base
+{
+	private:
+		int num2;
+	public:
+		Sub()
+		{
+			cout<<"Sub default constructor"<<endl;
+		}
+		void setNum2(int num2)
+		{
+			this->num2=num2;
+		}
+		int getNum2()
+		{
+			return num2;
+		}
+};
+int main()
+{
+	Sub s;   // compilation error
+	s.setNum1(100);
+	s.setNum2(200);
+	cout<<s.getNum1()<<"\t"<<s.getNum2()<<endl;
+}
+
+
+
+
+
+

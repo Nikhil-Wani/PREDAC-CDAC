@@ -1,0 +1,59 @@
+"this" is a pointer to the current or invoking object. with the help of "this" pointer member functions come to know for which object they need to work. "this" pointer is not available with static members because static members are not associated with the objects.
+What happens when object is created?
+
+a) memory allocation happens for instance member/s
+
+b) constructor is called which is used to initialize instance members.
+
+There are mainly 2 types of constructors available in object oriented programming languages:
+
+1) default constructor or no-arg constructor:
+	does not take any argument or parameter
+	is provided implicitly by compiler if programmer does not define any constructor inside class
+
+2) parameterized constructor
+	takes one or more parameters or arguments.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+what is friend function?
+
+friend function is the one which can access private members of the class in which it is declared as friend. Friend concept is exactly opposite of object oriented data hiding principle. That's why it is not allowed in most of the object oriented programming languages.
+
+e.g.
+
+class A
+{
+	private:
+		int num;
+	public:
+		void setNum(int k)
+		{
+			num=k;
+		}
+		int getNum()
+		{
+			return num;
+		}
+		friend void fun();
+};
+void fun()
+{
+	A ob;
+	cout<<ob.num; //  possible
+}
+int main()
+{
+	fun();
+}
+
+
+
+
+
+
+
+	
