@@ -1,0 +1,27 @@
+/*it does not work with real(float,double,long double) data type*/
+
+#include<stdio.h>
+
+
+void main()
+{
+int a,b,c;
+
+a=5;
+b=2;
+
+c=a%b;
+
+printf("%d",c);//1
+
+c=b%a;
+
+
+printf("%d",c);  //2
+}
+
+
+
+
+
+

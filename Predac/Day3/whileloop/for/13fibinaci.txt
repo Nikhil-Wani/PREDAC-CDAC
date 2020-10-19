@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{ int t,i,a,b,c;
+a=0;
+b=1;
+
+printf("enter term");
+scanf("%d",&t);
+
+	if(t==0)
+	printf("in valid term");
+
+	else if(t==1)
+	printf("%d",a);
+	
+	else {
+		printf("%d %d",a,b);
+	
+ 		for(i=2;i<t;i++) //
+		{ c=a+b;
+		 printf("%d",c);
+		  a=b;
+		  b=c;		
+		}
+	}
+getch();
+return 0;
+}

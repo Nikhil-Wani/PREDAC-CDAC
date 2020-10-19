@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int x; //default value 0 
+      void main( )
+      { int x=9; //hiding global variable
+	
+          printf(“%d”,x); --9
+         {
+	int x; //default value  garbbage
+           {
+	 int x =30;
+               printf(“%d”,x); //30
+            }
+
+            printf(“%d”,x); // garbbage
+		
+	   
+         }
+	 printf(“%d”,x);//9
+       }
+

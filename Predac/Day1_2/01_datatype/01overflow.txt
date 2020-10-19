@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+
+unsigned short a;
+
+a=65537;
+
+printf("%u",a); //1
+getch();
+
+return 0;
+}
+//single line comment
+
+/*  multiline
+comment            */

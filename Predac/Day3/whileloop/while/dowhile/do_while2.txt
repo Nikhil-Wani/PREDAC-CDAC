@@ -1,0 +1,25 @@
+
+
+
+//do the sum of all the no till user enter 0
+#include<stdio.h>
+void main()
+{
+
+int a=1, p=1;
+do
+{p=p*a;
+	printf("enter a no");
+	scanf("%d",&a);
+	c++;
+
+}while(a!=0);
+
+
+if(c==1)
+printf("%d",0);
+else
+printf("%d",p)
+
+
+}

@@ -1,0 +1,47 @@
+#include<stdio.h>
+int main()
+{
+float a=2.7;
+printf("%d",sizeof(2.7)); // 8 --2.7 is read as double datatype
+printf("%d",sizeof(a));  // 4
+printf("%d",sizeof(2.7f));  //4
+getch();
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+ float f=2.7;
+
+if(f<2.7 )
+printf("true");    //ans---true
+else
+printf("false")
+printf("\n");
+
+if(f>2.7 )
+printf("true");    //ans---false
+else
+printf("false")
+printf("\n");
+
+if(f!=2.7 )
+printf("true");    //ans---true
+else
+printf("false");
+ getch(); 
+return 0;
+}
+
+ 

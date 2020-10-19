@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main()
+{
+int a;
+printf("Enter a no");
+scanf("%d",&a);//15
+	if(a<10)
+printf("no is < 10");
+
+printf("I am last statement);
+
+getche();
+return 0;
+}

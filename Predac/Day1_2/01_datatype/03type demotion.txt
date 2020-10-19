@@ -1,0 +1,58 @@
+//type demotion
+
+#include<stdio.h>
+
+int main()
+{
+int no=2.5;
+
+printf("%d",no);  //2
+getch();
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+o/p 2
+
+
+
+#include<stdio.h>
+int main()
+{
+float a=2.4;
+
+if(a==2.4)  double false
+pf("hello");
+
+else
+pf("go")
+
+printf("%d",sizeof(2.5)); //8
+printf("%d",sizeof(a));//4
+
+return 0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

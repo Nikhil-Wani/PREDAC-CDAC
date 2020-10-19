@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main()
+{
+int no=5;
+do
+{
+printf("%d",no);
+no++;
+}while(no<4);
+
+}

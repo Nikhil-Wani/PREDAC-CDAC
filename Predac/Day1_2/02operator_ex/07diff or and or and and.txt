@@ -1,0 +1,71 @@
+Difference between || and |
+#include<stdio.h>
+void main()
+{int a,b,i;
+a=5,b=0;
+for(i=0;i<5;i++)
+{
+	if((++a>2)|(++b>2))
+	{
+	a++;
+	}
+printf("\na=%d",a);
+printf("\nb=%d",b);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+i=5
+
+#include<stdio.h>
+void main()
+{int a,b,i;
+a=0,b=0;
+for(i=0;i<5;i++)
+{
+	if((++a>2)&&(++b>2))
+	{
+	a++;
+	}
+
+printf("\n%d",a);
+printf("\n%d",b);
+
+  }
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

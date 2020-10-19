@@ -1,0 +1,41 @@
+type pramotion .000000
+
+#include<stdio.h>
+
+int main()
+{
+
+float no=2;
+
+printf("%f",no); //2.000000
+
+printf("%d",sizeof(float)); //4
+getche();
+
+return 0;
+}
+
+/*   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //2.000000

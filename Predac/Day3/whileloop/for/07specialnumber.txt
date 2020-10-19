@@ -1,0 +1,28 @@
+#include<stdio.h>
+void main()
+{int r,i,f,no,n,sum;
+sum=0,f=1;
+
+printf("enter no");
+scanf("%d",&no); 145
+
+n=no;
+
+  while(no!=0) //145 14
+ { 
+    r=no%10; //5  4
+
+    for(f=1,i=2;i<=r;i++)
+
+    f=f*i;
+
+    sum=sum+f; //0+120+24+1
+ 
+   no=no/10;
+ 
+  }
+  if(sum==n)
+ printf("No is special no");
+else
+printf("not a special no")
+}

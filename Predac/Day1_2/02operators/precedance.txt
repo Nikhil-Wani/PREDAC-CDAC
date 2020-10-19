@@ -1,0 +1,134 @@
+Precedance
+Associativity
+
+Operators			Type	Associativity
++     -      ++      --    !	Unary	Right to Left
+*      /       %			Binary	Left to Right
++     -				Binary	Left to Right
+<    <=      >      >=		Binary	Left to Right
+==     !=				Binary	Left to Right
+&&				Binary	Left to Right
+||				Binary	Left to Right
+=    *=     /=    %=    +=  -=		Binary	Left to Right
+?   :      		 (ternary or conditional)
+
+
+
+
+
+
+#include<stdio.h>
+void main()
+{
+printf("%d",2+5*6);	 // * has higher precedence then +
+printf("%d",2-5+6);	// Same precedence check associativity  			L to R
+}
+
+#include<stdio.h>
+void main()
+{
+
+printf("%d",5+3*6/3-5);
+
+}
+
+
+5+18/3-5
+5+6-5
+6
+
+
+% modular operator works only with ineger type data
+
+eg.
+int a=5,b=2;
+int c;
+c=a%b   o/p 1
+
+
+eg.
+int a=2,b=5;
+int c;
+c=a%b   o/p 2
+
+
+
+
+
+
+
+
+
+
+int a=5;
+
+is a<=5 	- true.
+is a>=5		-true.
+is a<5		-false
+is a>10         -false
+is a<=2		-false
+
+a<2+5		true	//+has heigher precedance
+
+
+
+
+
+
+
+
+
+&&
+If both condition true then only true
+
+eg
+int a=5;
+
+a>=5&&a<10 		true
+	
+
+int a=2
+a>=5&&a<10 		false	
+
+
+
+If 1st condition false it will not check the second condition
+
+
+
+
+||
+if either condition true result is true
+
+eg
+int a=10;
+a>5||a<2	true
+
+
+a<5||a<20 	true
+
+if 1st condition true it will not read second condition
+
+
+
+Bitwise
+&
+
+& if 1st condition is false still it will evaluate second condition  even though we know that result is false.-It is slower
+
+
+bitwise
+|
+
+|if 1st condition true still it read second condition
+
+
+
+
+
+coumpound assignment
+int a=5
+a+=7			//a=a+7
+printf("%d",a);
+
+

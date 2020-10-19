@@ -1,0 +1,68 @@
+#include<stdio.h> 
+void main() 
+{ 
+int a,b; 
+a=5; 
+b=6; 
+/* now adding b to a we have */; 
+a=b+a; 
+b=a-b; /* now here b will get value of a */; 
+a=a-b /*this will give a value of b */; 
+} 
+
+#include<stdio.h> 
+void main() 
+{ 
+int a,b; 
+a=5; 
+b=6; 
+/* this one statement is enough */; 
+a^=b^=a^=b; 
+} 
+
+
+a = a + b - (b = a)
+
+#include<stdio.h> 
+void main () 
+{ 
+int a , b ; 
+a=5; 
+b=6; 
+a=a*b ; 
+b=a/b ; /*b get the value of a*/ 
+a=a/b ; /*a get the previous value of b*/ 
+}
+
+class Swap 
+{ 
+public static void main(String args[]) 
+{ 
+final int a=10; 
+final int b=4; 
+a=(a*b)/a; 
+b=(a*b)/b; 
+}} 
+
+a = a Xor b 
+b = a Xor b 
+a = a Xor b
+
+
+#include<stdio.h> 
+void main() 
+{ 
+int a,b; 
+a=5; 
+b=6; 
+/* now multiplying b to a we have */; 
+a=a*b; 
+b=a/b; /* now here b will get value of a */; 
+a=a/b /*this will give a value of b */; 
+} 
+
+
+
+011 3
+010 2
+101 5

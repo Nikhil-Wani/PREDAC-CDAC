@@ -1,0 +1,57 @@
+#include<stdio.h>
+void main()
+{
+int a;
+a=15;
+if(a>10);
+printf("bye")
+
+printf("be alert")
+
+}
+
+
+
+
+
+if(o)			if(1)
+printf("good");		printf("bad");
+else			else
+printf("bad");		printf("good");
+
+
+
+
+
+
+   ->
+if(1,0) //false 0 means false
+printf("hello");
+
+
+if(0,1) //true 1 means true
+printf("hello");
+
+int a=7;
+
+if(a=5) //true  data means true
+printf("good")
+
+
+
+
+
+if(printf("vita"))
+{
+pf("go");
+}
+False---
+
+0,'\0',NULL
+
+
+
+
+
+
+

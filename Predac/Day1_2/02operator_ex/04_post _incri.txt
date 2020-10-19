@@ -1,0 +1,102 @@
+/*
+post increment
+a=5;
+a++;
+a=a+1; 
+*/
+#include<stdio.h>
+
+int main()
+{
+int a,b;
+a=5;
+b=5;
+printf("%d",a++);//5
+printf("%d",b+1);//6
+printf("%d",a); //6
+a++;
+printf("%d",a);7
+printf("%d",b);//5
+getche();
+return 0;
+}
+
+
+/*
+post decrement
+a=5;
+a--;
+a=a-1; 
+*/
+
+#include<stdio.h>
+
+void main()
+{
+int a,b;
+a=5;
+b=5;
+printf("%d",a--);//5
+printf("%d",b-1);4
+printf("%d",a);//4
+getche();
+}
+
+
+
+
+
+
+
+#include<stdio.h>
+
+void main()
+{
+int a,b;
+a=5;
+b=a-- + a--;
+printf("%d",b); //10
+printf("%d",a);//3
+getche();
+}
+
+void main()
+{
+int a,b;
+a=5;
+b= ++a + a++;
+printf("%d",b); //12
+printf("%d",a);//7
+getche();
+}
+
+
+
+
+
+
+
+void main()
+{
+int a,b;
+a=5;
+b= ++a + a--;
+printf("%d",b); //12
+printf("%d",a);//5
+getche();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

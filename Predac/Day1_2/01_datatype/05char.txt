@@ -1,0 +1,39 @@
+/*
+every character has ascii value
+
+A-Z 65-90
+a-z 97-122
+0-9 48-57
+
+spacial symbols 0-47,58,64,91-96,123-127*/
+
+#include<stdio.h>
+int main()
+{
+char ch='A';
+char c= 65;
+char d='65';
+
+printf("%c",ch); //A
+
+printf("%d",ch); //65
+
+printf("%c",c); //A
+
+printf("%d",c); //65
+
+printf("%c",d); //depend upon compiler tc  6 vc 5
+printf("%d",d); // tc 54   vc 53
+printf("%c",-100); //pound sign
+getch();
+return 0;
+}
+
+
+
+
+
+
+
+
+

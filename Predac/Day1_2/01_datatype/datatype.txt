@@ -1,0 +1,29 @@
+Data type	  Range of number	format specifier
+unsigned short	 0-65535			%u
+short 		-32,768 to +32,767 		%d
+(2)
+
+unsigned int	 0-4294967295			%u
+int		-2,147,483,648 to  2,147,483,647 %d 
+(4)
+
+unsigned long int  	0-4294967295		%lu		
+long int        	  -2,147,483,648 to 	%ld 
+(4)			2,147,483,647		
+
+float						%f		
+(4)
+double						%lf
+(8)
+long double 					%Lf
+(10)
+
+char			-128 to 127		 %c
+(1)
+unsigned char 		0 to  255 		 %c
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+#include<stdio.h>
+void main()
+{long int ,i,f,no,sum;
+int r,
+for(no=1;no<=200000;no++)
+ { n=no;
+ sum=0;
+
+  while(n!=0)
+ {
+   r=n%10;
+   for(f=1,i=2;i<=r;i++)
+    f=f*i;
+  sum=sum+f;
+  n=n/10;
+  }
+  if(sum==no)
+ printf("%ld",no);
+ }
+
+}
+
+
+
+
+
+
+
+#include<stdio.h>
+void main()
+{ int n1,n2,t,i,hcf=1;
+
+ n1=2;
+n2=4;
+  if(n1<n2)
+  { t=n1;
+   n1=n2;
+  n2=t;
+  }
+ if(n1%n2==0)
+	printf("hcf=%d",n2);
+else{  
+ for(i=2;i<=n2/2;i++)
+   { if(n1%i==0&&n2%i==0)
+	hcf=i;
+
+   }
+  printf("hcf=%d",hcf)
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

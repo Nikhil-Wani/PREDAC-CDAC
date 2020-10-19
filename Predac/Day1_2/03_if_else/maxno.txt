@@ -1,0 +1,64 @@
+Accept 3 number from user and print highest number
+
+Problem:
+#include<stdio.h>
+int main()
+{
+int a,b,c;
+
+a=10;
+b=8;
+c=12;
+
+if(a>b&&a>c)
+printf("%d",a)
+
+else if(b>c)
+printf("%d",b);
+else
+printf("%d",c);
+
+}
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+int main()
+{ int a,b,c;
+a=15;
+b=8;
+c=12;
+if(a>b)
+{
+   if(a>c)
+    printf("%d",a);
+  else 
+ printf("%d",c);
+ 
+}
+else
+{
+ if(b>c)
+  printf("%d",b);
+    else 
+   printf("%d",c);
+
+} getche(); return 0;}
+}
+
+}
+
+
+
+if(a>b) b=a;
+if(c>b) b=c;
+printf(“%d”, b);
+What is represented by above code?
+
+

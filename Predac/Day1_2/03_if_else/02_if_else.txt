@@ -1,0 +1,99 @@
+#include<stdio.h>
+
+int main()
+{
+int a;
+printf("Enter a no");
+scanf("%d",&a);  //8
+if(a<10)
+printf("no is < 10");
+else
+printf("no is >10");
+
+printf("I am last statement);
+
+getche();
+return 0;
+}
+
+
+Q1. If no divisible by 3 print "fun"
+if no divisible by 7 print "buzz"
+if no divisible by 3 and 7 print "fun buzz"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+void main()
+{ int no;
+printf("enter number");
+scanf("%d",&no); 49 9 21
+ if (no%3==0&&no%7==0)
+printf("fun buzz");
+
+else if(no%3==0)
+ printf("fun ");
+
+else if(no%7==0)
+printf("buzz")
+}
+0------------------------------------
+
+if(no%3==0)
+printf("fun");
+if(no%7==0)
+printf("buzz");
+
+
+
+
+
+
+
+problem
+
+49,9,21
+
+
+if(no%3==0)
+printf("fun");
+
+else if(no%7==0)
+printf("buzz");
+
+else if(no%3==0&&no%7==0)
+printf("fun buzz");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

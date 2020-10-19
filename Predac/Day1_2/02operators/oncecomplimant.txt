@@ -1,0 +1,9 @@
+One’s Complement Operator
+
+On taking one’s complement of a number, 
+all 1’s present in the number are
+ changed to 0’s and all 0’s are 
+changed to 1’s. 
+
+
+e.g. one’s  compliment of  1010 is 0101.

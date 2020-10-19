@@ -1,0 +1,25 @@
+//3 Arithmatic Operator
+#include<stdio.h>
+void main()
+{
+int num1,num2,num3,result;
+float f_num = 10.5;
+num1 = 10;
+num2 = 5;
+num3 = 2;
+result = num1 + num2 * num3;
+printf("Answer is %d\n", result); //20
+
+result = (num1 + num2) * num3;   //30
+printf("Answer is %d\n", result);
+
+result = num1 % num3;
+printf("Answer is %d\n", result); //0
+
+result = 9/7*3;
+printf("Answer is %d\n", result); //3
+
+result = num1 % 3;
+printf("Answer is %d\n", result);  //1
+result=num1%f_num; // err
+}

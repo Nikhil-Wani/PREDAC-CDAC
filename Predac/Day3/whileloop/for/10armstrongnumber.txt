@@ -1,0 +1,56 @@
+Armstrong no
+#include<stdio.h>
+int main()
+{
+int no,i,sum,s,r;   //no-0 r 3 sum 371 s 371
+sum=0;
+printf("enter number");
+scanf("%d",&no); 371 
+s=no;
+ while(no!=0)
+ {
+  r=no%10;
+  sum=sum + r*r*r;
+  no=no/10;
+ }
+if(sum==s)
+printf("no is armstrong")
+else
+printf("number is not an armstrong") 
+
+return 0;
+}
+
+
+
+
+Armstrong number between 100 to 999
+#include<stdio.h>
+int main()
+{
+int no,i,sum,s,r;   //no-0 r 3 sum 371 s 371
+
+for(i=100;i<=999;i++)
+{sum=0;
+  s=i;
+  while(s!=0)
+ {
+  r=s%10;
+  sum=sum + r*r*r;
+  s=s/10;
+ }
+if(sum==i)
+printf("%d",i); //153 ,370,371
+}
+ return 0;
+}
+
+
+
+
+
+
+
+
+
+

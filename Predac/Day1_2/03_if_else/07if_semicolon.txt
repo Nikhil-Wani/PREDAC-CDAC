@@ -1,0 +1,55 @@
+int main()
+{
+
+int a=5;
+if(a==7);
+
+printf("hello");
+
+printf("last line");
+
+
+
+
+}
+
+
+
+
+
+
+
+int a=5
+if(a==7);
+printf("hello");
+else
+printf("bye");
+
+above program is visible to compiler as follows
+
+
+int a=5
+if(a==7) 
+{;}
+printf("hello");
+
+else
+
+printf("bye");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

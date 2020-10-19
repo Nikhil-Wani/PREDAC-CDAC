@@ -1,0 +1,79 @@
+
+/*condition? result if true : result if false*/
+#include<stdio.h>
+void main()
+{
+
+	int data;
+	printf("enter no");
+	scanf("%d",&data);-10
+
+	data>0?printf("possitive"):printf("negative");
+
+getche();
+}
+
+
+
+#include<stdio.h>
+#include<stdio.h>
+void main()
+{
+
+int no1,no2,no3;
+
+printf("enter three no");
+scanf("%d%d%d",&no1,&no2,&no3);
+
+	
+ no1>no2	? (no1>no3?(printf("no1 is heighest%d",no1))
+   :
+     (printf("no3 is heighest%d",no3)))
+:
+
+(no2>no3?printf("no2 is heighest%d",no2)
+ :printf("no3 is heighest%d",no3));
+
+
+
+getche();
+}
+
+
+
+
+#include<stdio.h>
+
+
+void main()
+{
+int a,b,c;
+a=5;
+b=7
+c=(a>b)?a:b;
+printf("%d",c); 7
+
+getche();
+}
+
+#include<stdio.h>
+
+void main()
+{
+int a,b,c;
+a=15;
+b=7
+(a>b)?c=a:(c=b);
+printf("%d",c); 15
+
+getche();
+}
+
+
+
+
+
+
+
+
+

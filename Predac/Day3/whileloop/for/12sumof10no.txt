@@ -1,0 +1,118 @@
+#include<stdio.h>
+int main()
+{
+int i,no,sum=0;
+printf("enter 5 number");
+ for(i=1;i<=5;i++)
+ {
+ scanf("%d",&no);
+ sum=sum+no;
+ }
+
+printf("%d",sum);
+
+
+}
+ 5 2 3 6 9--9 6 3 2 5
+-5 -2 -3 -6 -9
+
+#include<stdio.h>
+int main()
+{
+int i,no,max;
+
+printf("enter number");
+scanf("%d",&max);
+
+printf("enter 4 number");
+ for(i=1;i<=4;i++)
+ {
+ scanf("%d",&no);
+  if(max<no) 
+  max=no;
+ }
+
+printf("%d",max);
+
+
+
+
+}
+
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+int i,no,min;
+
+printf("enter number");
+scanf("%d",&min);
+
+printf("enter 5 number");
+ for(i=1;i<=4;i++)
+ {
+ scanf("%d",&no);
+  if(min>no) 
+  min=no;
+ }
+
+printf("%d",min);
+
+
+}
+
+
+
+
+
+
+5 2 3 6 9--3 10 6 2 5
+-5 -2 -3 -6 -9
+#include<stdio.h>
+int main()
+{int i,no,max,smax,t;
+printf("enter number");
+scanf("%d",&max);
+printf("enter number");
+scanf("%d",&smax);
+if(max<smax)
+{ t=max;
+ max=smax;
+ smax=t;
+ }
+printf("enter 3 number");
+ for(i=1;i<=4;i++)
+ { scanf("%d",&no);
+  if(max<no) 
+   {smax=max; 
+      max=no;   
+     }
+   else if(smax<no)
+     smax=no; 
+ }
+printf("%d %d",max,smax);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

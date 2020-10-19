@@ -1,0 +1,18 @@
+1
+~ One’s Complement Operator
+
+On taking one’s complement of a number, 
+all 1’s present in the number are
+ changed to 0’s and all 0’s are 
+changed to 1’s. 
+
+
+e.g. one’s  compliment of  1010 is 0101.
+
+
+Number Representation
+
+1's complement is a very easy method for representing negative numbers in binary number system. To represent any number which is negative first we have to consider the binary value of its positive magnitude in binary system, then we have to simply convert the 1’s with 0 and the 0s with 1 and we will get the 1's complement of that number which is also the negative value of that number. As we can see that this method is truly a method of complementing. We will have a clear idea if we look at some examples.
+Example
+
+First let us consider the positive numbers from 0 -7

@@ -1,0 +1,114 @@
+/*
+pre increment
+a=5;
+++a;
+a=a+1; 
+*/
+
+#include<stdio.h>
+int main()
+{
+int a,b;
+a=5;
+b=5;
+printf("%d",++a); //6
+printf("%d",b+1);  //6
+printf("%d",b); //5
+printf("%d",a); //6
+getche();
+return 0;
+}
+
+
+/*
+pre decrement
+a=5;
+--a;
+a=a-1; 
+*/
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b;
+a=5;
+b=5;
+printf("%d",--a);//4
+printf("%d",b-1);//4
+printf("%d",b);//5
+printf("%d",a);//4
+getche();
+}
+
+
+
+
+#include<stdio.h>
+void main()
+{
+int a,b;
+a=5;
+b=++a + ++a;
+printf("%d",b); //14
+printf("%d",a); //7
+getche();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+a=5;
+                            <-
+printf("%d %d %d",++a,a++,++a); TC -866
+
+gcc---868
+
+
+#include<conio.h>
+void main()
+{
+int a,b;
+a=5;
+b=a++ + a++;
+printf("%d",b); //10
+printf("%d",a); //7
+getche();
+}
+
+
+a=5;
+printf("%d ",a+++a); Tc //11  VC 10
+
+?  a++ +a  post has higher precedance  
+? a+ ++a
+
+printf("%d",a++++a); ERR
+
+
+a=5;
+b=a++ + ++a; 
+
+
+
+
+b-12  a=7
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+Operators			Type	Associativity
+
++     -      ++      --    !	Unary	Right to Left
+*      /       %		Binary	Left to Right
++     -				Binary	Left to Right
+<    <=      >      >=		Binary	Left to Right
+==     !=			Binary	Left to Right
+&&				Binary	Left to Right
+||				Binary	Left to Right
+=    *=    /=    %=    +=    -=	Binary	Left to Right
+
+
+operatoers are symbols eg. +,*,
+operand is data or variable
+
+eg
+a+b*c
+where a,b,c are operand
+
+
+Unary 
+
+means single
+it operates on only one operand
+eg +5,-8.8,a++ ,--a
+
+
+
+Binary means two
+
+it operates on more then one operand
+
+
+
+Assignment operator
+
+
+
+
+#include<stdio.h>
+void main()
+{
+int a=5;
+printf("%d",-a);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

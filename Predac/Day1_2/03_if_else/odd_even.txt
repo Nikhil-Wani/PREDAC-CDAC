@@ -1,0 +1,60 @@
+#include<stdio.h>
+int main()
+{ int no;
+
+prinf("enter number");
+scanf("%d",&no); //4
+
+ if(no%2==0)
+
+  printf("number is even");
+ 
+  else
+
+ printf("number is odd");
+
+ getch();
+return 0;
+
+}
+
+
+
+
+#include<stdio.h>
+int main()
+{ int no;
+
+prinf("enter number");
+scanf("%d",&no); //4
+
+if(no&1==0)
+printf("number is even");
+else
+printf("number is odd");
+getch();
+return 0;
+
+}
+
+
+
+
+
+#include<stdio.h>
+int main()
+{ int no,q;
+
+prinf("enter number");
+scanf("%d",&no); //4
+
+q=no/2;
+
+if(q*2==no)
+printf("number is even");
+else
+printf("number is odd");
+getch();
+return 0;
+
+}

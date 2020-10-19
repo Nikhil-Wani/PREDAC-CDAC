@@ -1,0 +1,63 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+int a,b;
+
+printf("Enter two no");
+scanf("%d %d",&a,&b);
+
+
+printf("%d",a+b);
+
+}
+
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+int a,b;
+
+printf("Enter two no");
+scanf("%d %d",&a,&b);
+a=a+b;
+
+printf("%d",a);
+
+
+}
+
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b,c;
+
+printf("Enter two no");
+scanf("%d %d",&a,&b);
+c=a+b;
+
+printf("%d",c);
+printf("%d",a+b);
+
+a=a+b;
+printf("%d",a);
+}
+
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+char nm[20];
+
+printf("Enter your name");
+scanf("%s",nm);
+printf("%d",nm);
+
+}

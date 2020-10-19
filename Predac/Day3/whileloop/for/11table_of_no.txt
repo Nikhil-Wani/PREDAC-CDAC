@@ -1,0 +1,64 @@
+#include<stdio.h>
+
+int main()
+{
+int no,i,ans;
+
+
+no=3;
+
+for(i=1;i<=10;i++)
+{
+ ans=no*i;
+ printf("%d*%d=%d\n",no,i,ans);
+}
+
+
+}
+
+
+
+ 
+#include<stdio.h>
+
+int main()
+{
+int no,i,ans;
+
+
+no=3;
+ for(i=1;i<=no;i++)
+{
+
+ for(j=1;j<=10;j++)
+ {
+  ans=i*j;
+  printf("%d*%d=%d\n",i,j,ans);
+ }
+}
+return 0;
+}
+
+
+
+#include<stdio.h>
+
+int main()
+{
+int no,i,ans;
+
+
+no=3;
+ for(i=1;i<=10;i++)
+{
+
+ for(j=1;j<=no;j++)
+ {
+  ans=i*j;
+  printf("%d*%d=%d\n",j,i,ans);
+ }
+}
+return 0;
+}
+
+

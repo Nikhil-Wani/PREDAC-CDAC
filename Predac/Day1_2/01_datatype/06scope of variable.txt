@@ -1,0 +1,30 @@
+scope of variable is local to the block { }
+#include<stdio.h>
+int x; //default value 0 
+      int main( )
+
+      {
+	printf(“%d”,x); 0
+	 x=20;
+         {
+	int y ; //default value  garbbage
+           {
+	 int z =30;
+               printf(“%d”,z); //30
+            }
+
+            printf(“%d”,y);//garbbage
+	   // printf(“%d”,z);
+
+         }
+
+	//printf(“%d”,y);
+	printf(“%d”,x); //20
+
+getche();
+return 0;
+       }
+
+comment
+//
+/* */

@@ -1,0 +1,147 @@
+calculation between same datatype results into same datatype
+int+int =int
+calculation between different datatype results into higher datatype
+int+double=double
+
+#include<stdio.h>
+int main()
+{
+int a,b,c;
+a=5;
+b=2;
+c=a/b;
+
+printf("%d",c); 
+
+getche();
+
+return 0;
+}
+
+
+
+
+
+
+
+
+//2
+
+
+
+#include<stdio.h>
+int main()
+{
+
+int a,b;
+
+float c;
+
+a=5;
+
+b=2;
+
+c=a/b;2.000000
+
+printf("%f",c); 
+getche();
+
+return 0;
+}
+
+
+
+
+//2.000000
+
+
+
+
+
+
+#include<stdio.h>
+
+int main()
+{
+
+int a;
+float c,b;
+
+a=5;
+
+b=2;
+
+c=a/b;
+
+printf("%f",c);  //2.500000
+
+getche();
+
+return 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//2.500000
+Type casting=It force a datatype to be read as 
+different data type for that line only
+
+
+type casting
+
+#include<stdio.h>
+int  main()
+{
+int a,b;
+float c;
+a=5;
+b=2;
+c= (float) a/b;  //a/(float)b      
+
+printf("%f",c); //2.500000
+
+getche();
+
+return 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

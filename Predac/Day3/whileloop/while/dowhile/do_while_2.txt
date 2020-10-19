@@ -1,0 +1,22 @@
+
+
+
+//do the sum of all the no till user enter 0
+#include<stdio.h>
+void main()
+{
+
+int no,sum=0;
+do
+{
+	printf(enter numner);
+        scanf("%d",&no);
+	sum=sum+no;
+
+}while(no!=0);
+
+printf("%d",sum);
+
+
+
+}

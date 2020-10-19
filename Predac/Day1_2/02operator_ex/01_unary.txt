@@ -1,0 +1,33 @@
+/*
+Unary  means single
+it operates on only one operand
+eg +5,-8.8,a++ ,--a
+*/
+
+#include<stdio.h>
+int main()
+{
+int a=-5;
+int b= +7;
+printf("%d",a);  //-5 
+printf("%d",-a);  //5 -(-5)
+printf("%d",b);  // 7
+
+printf("+%d",b); //+7
+
+printf("%d",-b); //-7
+
+getche();
+
+return 0;
+}
+
+
+
+
+
+
+
+
+
+

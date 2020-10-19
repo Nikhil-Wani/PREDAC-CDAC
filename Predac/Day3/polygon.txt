@@ -1,0 +1,27 @@
+#include<stdio.h>
+void main()
+{a,b,c,d;
+
+
+printf("enter 4 number");
+scanf("%d %d %d %d",&a,&b,&c,&d);
+
+if(a<(b+c+d)&&b<(a+c+d)&&c<(a+b+d))
+{
+	 printf("polygon status 1");
+		if(a==b&&b==c)
+		printf("square status 1");
+		 else 
+		printf("square status 0");
+}
+
+else
+{printf("polygon status 0");
+  printf("square status 0")
+
+}
+
+
+
+
+}

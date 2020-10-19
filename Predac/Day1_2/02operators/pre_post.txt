@@ -1,0 +1,60 @@
+++ is increment by 1
+
+a++ is post increment
+++a is pre increment
+
+eg 1
+
+int a=5;
+int b=6;
+printf("%d",a++);
+printf("%d",b+1);
+
+
+
+
+
+
+
+
+eg 2
+
+int a=5;
+int b=6;
+printf("%d",++a)
+printf("%d",b+1); 7
+
+
+
+
+
+eg 3
+int a=5;
+printf("%d%d%d%d",++a,a++,a++,++a)
+
+9766
+
+
+
+printf("%d",a);
+
+
+
+
+
+
+
+
+
+
+
+
+post increment has heigher precedance then pre
+
+#include<stdio.h>
+void main()
+{
+int a=5;
+printf("%d",a++ + a);	o/p11
+}
+

@@ -1,0 +1,52 @@
+#include<stdio.h>
+int main()
+{
+
+int no,i;
+printf("enter number");
+scanf("%d",&no); 7
+
+for(i=1;i<=5;i++)
+ { printf("%d",++no);8 9 10 11 12
+   printf("%d",no+i);8 9 10 11 12 
+  
+ }
+
+
+for(i=no+1;i<=no+5;i++)
+  printf("%d",i); 8
+
+}
+
+
+#include<stdio.h>
+int main()
+{ int no,i;
+printf("enter number");
+scanf("%d",&no); 3
+
+for(i=1;i<=no;i++)
+   printf("%d",no+i);4 5 6 
+  
+
+for(i=no;i>=1;i--)
+  printf("%d", ++no);  4 5 6  
+
+
+for(i=no+1;i<=no+no;i++)
+  printf("%d",i);
+
+n=no;
+for(i=1;i<=n;i++) 
+printf("%d",++no);
+
+
+for(i=1;i<=no;i++) //not infinity
+printf("%d",++no);
+
+
+
+
+
+
+}

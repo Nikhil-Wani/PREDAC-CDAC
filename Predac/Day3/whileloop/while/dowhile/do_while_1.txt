@@ -1,0 +1,21 @@
+
+
+
+//do the sum of all the no till user enter 0
+#include<stdio.h>
+void main()
+{
+
+int a=5;
+do
+{
+	printf("%d",a);//5 4 3 2 1
+
+a--;
+
+}while(a>=1);
+
+
+
+
+}

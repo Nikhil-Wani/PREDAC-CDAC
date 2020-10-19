@@ -1,0 +1,234 @@
+-----------leap year--------------
+#include<stdio.h>
+void main()
+{
+	int y;
+int flag=0;
+	printf("\nEnter year: ");
+	scanf("%d",&y);
+
+	if(y%4==0&&y%100!=0||y%400==0)
+				
+	printf("\nYear %d is a leap year",y);
+				else
+	printf("\nYear %d is not a leap year",y);
+				
+		}
+
+----------reverse the case-----------
+#include<stdio.h>
+int main()
+{	char ch ;
+		printf("Enter an alphabate:");
+	scanf("%c",&ch);
+	if(ch>=65 && ch<=90)
+	{		ch=ch+32;
+          printf("Reversed case of Entered alphabate is %c",ch);
+        return 0;
+
+	}
+else if(ch>=97&&ch<=122)
+	{
+		ch=ch-32;
+         printf("Reversed case of Entered alphabate is %c",ch);
+return 0;
+
+	}
+else printf("u have not enterd valid char");
+ 
+return 0;
+}
+
+#include<stdio.h>
+void main()
+{
+int no1,no2,no3;
+printf("enter three no");
+scanf("%d%d%d",&no1,&no2,&no3);
+
+	if(no1>no2)
+	 {  if(no1>no3)
+	   printf("%d no1 is heighest",no1);
+		else
+	    printf("%d no3 is heighest",no3);
+			
+	}
+         else
+        {  if(no2>no3)
+	     printf("%d no2 is heighest",no2);
+	else				        	           printf("%d no3 is heighest",no3);
+	}
+}
+-----------------------------------------------------
+
+(no1>no2)?(no1>no3?printf("%d",no1):printf("%d",no3))
+   :      (no2>no3? printf("%d",no2):printf("%d",no3));
+
+
+
+
+----------------entered char is vovel-------------
+/*Program to check entered character is vowel or not*/
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	char ch;
+	clrscr();
+	printf("Enter a character:");
+	scanf("%c",&ch);
+	(ch==65||ch==97 || ch==69||ch==101 || ch==73||ch==105 || ch==79||ch==111 || ch==85||ch==117)
+	? printf("Character is Vowel"):printf("Character is Not Vowel");
+	getch();
+}
+
+
+
+
+if(ch==65||ch==97 || ch==69||ch==101 || ch==73||ch==105 || ch==79||ch==111 || ch==85||ch==117)
+printf("Character is Vowel");
+else
+printf("Character is Not Vowel");
+
+
+/*An electric power distribution co. charges its domestic consumers as follows
+follows:
+consumption units
+0-200			0.50 perunit
+201-400			100+0.65 pu.excess of 200
+401-600			230+0.80pu.excess of 400
+601 and above	390+1.00pu in excess of 600*/
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+void main()
+{
+int unit;
+double charges;
+printf("enter unit consumed");
+scanf("%d",&unit);
+ 
+	if(unit<=200)
+	charges=.5*unit;
+
+	else if(unit<=400)
+	
+	charges=100+0.65*(unit-200);
+
+	else if(unit<=600)
+	
+	charges=230+0.8*(unit-400);
+ else
+
+     charges=230+0.8*(unit-600);
+
+
+printf("you have entered unit 
+%d=charges=%f",unit,charges);
+}
+
+
+#include<stdio.h>
+void main()
+{
+
+int sal;
+float tax,netsal;
+
+printf("enter salay");
+scanf("%d",&sal);
+
+if(sal>25000)
+
+tax=0.10;
+
+else if(sal>10000)
+
+tax=0.25;
+
+
+netsal=sal-sal*tax;
+
+printf("%f",netsal);
+
+
+
+}
+
+
+#include<stdio.h>
+void main()
+{a,b,c,d;
+
+
+printf("enter 4 number");
+scanf("%d %d %d %d",&a,&b,&c,&d);
+
+if(a<(b+c+d)&&b<(a+c+d)&&c<(a+b+d))
+{
+	 printf("polygon status 1");
+
+		if(a==b&&b==c)
+
+		printf("square status 1");
+
+		 else 
+
+
+		printf("square status 0");
+}
+
+else
+
+{printf("polygon status 0");
+
+  printf("square status 0")
+
+}
+
+
+
+
+}
+
+/* enter sex m/f  and sal if m-sal >8000 tax is 5% of sal else 
+
+2%
+if f-sal>5000 tax is 3% else tax is 1% find 
+a.net sal=sal-tax 
+
+*/
+#include<stdio.h>
+void main()
+{
+char sex;
+float sal,tax,netsal;
+printf("Enter Sex and salary");
+scanf("%c%f",&sex,&sal);
+if(sex=='M'||sex=='m')
+{	if(sal>8000)
+	tax=0.05;
+	else
+		tax=0.02;
+}
+else
+{
+	if(sex=='F'||sex=='f')
+		if(sal>5000)
+		tax=0.03;
+		else
+		tax=0.01;
+
+}
+netsal=sal-(tax*sal);
+printf("%f",netsal);
+}
