@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<malloc.h>
+int main()
+{ int *p[3]; 
+//row is fixed array of poiner pointing to any column
+ 	int i,j,c;
+	int size[3];
+
+	for(i=0;i<3;i++)
+	{	 printf("enter number of column");
+		 scanf("%d",&c) ;
+		 size[i]=c;
+		 p[i]= (int *)malloc(c*sizeof(int));
+
+		 for(j=0;j<c;j++)
+		  scanf("%d",&p[i][j]);
+		}
+	for(i=0;i<3;i++)
+	{
+		 for(j=0;j<size[i];j++)
+			  printf("%d",p[i][j]);
+		printf("\n");
+	}
+
+	getche();
+	return 0;
+
+}
+	

@@ -1,0 +1,24 @@
+Goto
+
+#include<stdio.h>
+void main()
+{
+
+int sum=0,n=1;
+LOOP:
+sum=sum+n;
+if(n==3)
+goto print;
+else
+{
+n++;
+goto LOOP;
+
+}
+print:
+printf("sum=%d",sum);
+
+
+}
+
+

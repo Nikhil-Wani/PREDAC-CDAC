@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{ char name[5][10];
+ for(i=0;i<5;i++)
+  {
+   printf("enter name");
+   scanf("%s",name[i]);
+  }
+for(i0;i<5;i++)
+ {   printf("%s",name[i]);}
+
+for(i=0;i<5;i++)
+{  for(j=0;name[i][j]!='\0';j++)
+     printf("%c",name[i][j]);
+      printf("\n");
+}
+retun 0;
+}
+
+
+
+
+
+
+
+
+
+

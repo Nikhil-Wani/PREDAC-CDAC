@@ -1,0 +1,102 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{ int t,i,l,max;
+max=0;
+char name[4][10];
+ for(i=0;i<4;i++)
+	{printf("enter name");
+       scanf("%s",name[i]);
+     }
+
+
+ for(i=0;i<4;i++)
+	{  l=strlen(name[i]);
+		if(max<l)
+		{ max=l;
+		 t=i;
+		}
+
+     }
+
+
+
+	printf("%s",name[t]);
+	printf("\n");
+
+ }
+
+
+
+
+
+
+
+
+	for(i=0;i<3;i++)
+	{
+		
+          for(j=0;j<3-i;j++)
+          {
+            if(strcmpi(name[j],name[j+1])>0)
+		{    strcpy(t,name[j]);
+			strcpy(name[j],name[j+1]);
+			strcpy(name[j+1],t);
+
+		}
+    
+
+           }
+ 
+
+
+         }
+for(i=0;i<4;i++)
+	printf("%s",name[i]);}
+
+
+
+
+}
+
+
+sort as per length of string
+#include<string.h>
+#include<stdio.h>
+int main()
+{
+int i,j,n;
+char str[5][10]={"Geeta","mona","raj","Vidya","vidyanidhi"};
+char t[10];
+n=5;
+
+for(i=0;i<n-1;i++)
+ { 
+   for(j=0;j<n-1-i;j++)
+  {
+     if(strln(str[j])>strln(str[j+1]))
+      { strcpy(t,arr[j]);
+	strcpy(arr[j],arr[j+1]) ;
+	strcpy(arr[j+1],arr[t]) ;
+        }
+ 
+  }
+}
+
+for(i=0;i<n;i++)
+printf("%s",str[i]);
+return 0;
+ }
+
+
+
+
+}
+
+
+
+
+
+
+
+

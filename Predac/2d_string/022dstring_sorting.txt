@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{ int i,j,n;
+char t[10];
+n=4;
+char name[4][10]={"Raj","Mona","Geeta","Anita"}
+
+for(i=0;i<n-1;i++)
+{
+	for(j=0;j<n-1-i;j++)
+	{ if(strcmp(name[j],name[j+1])>0)
+		 {    strcpy(t,name[j]);
+			strcpy(name[j],name[j+1]);
+			strcpy(name[j+1],t);
+                 }
+	}
+}
+for(i=0;i<n;i++)
+prinf("%s",name[i]);
+}
